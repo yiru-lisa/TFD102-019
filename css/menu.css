@@ -1,0 +1,62 @@
+@import url(./header.css);
+@import url(./banner.css);
+@import url(./footer.css);
+
+*{
+    box-sizing: border-box;
+    font-family: "微軟正黑體","Prestige Elite Std Bold";
+
+}
+
+body.body_area{
+    background-color: #FCE7DD;
+    font-size: 0;
+    margin: 0;
+}
+
+div.menuarea{
+    border: 1px solid red;
+    width: 900px;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    font-size: 0px;
+}
+
+div.pagetitle{
+    border: 1px solid orange;
+    width: 250px;
+    font-size: 0;
+}
+
+h2.pagetitle{
+    font-size: 24px;
+    margin-left: 20px;
+    text-decoration: underline #FFA6A6; 
+    font-weight: normal;
+}
+
+div.pagetitle , div.menuoption{
+    display: inline-block;
+}
+
+div.menuoption{
+    border: 1px solid green;
+    font-size: 0;
+    margin-left: 100px;
+}
+
+div.option_item{
+    border: 1px solid blue;
+    display: inline-block;
+    font-size: 0;
+    width: 120px;
+}
+
+div.option_item > p{
+    font-size: 16px;
+    text-decoration: underline #C6CDBD ;
+    text-align: center;
+    margin-top: 20px;
+}
+
+

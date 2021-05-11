@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    font-family: "微軟正黑體","Prestige Elite Std Bold";
+}
+
+header.header{
+    background-color: white;
+    position: sticky;
+    top: 0;
+    
+}
+
+div.header_all{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    
+}
+
+div.header_left , div.header_logo , div.header_right{
+    display: inline-block;
+    vertical-align: bottom;
+    /* border: 1px solid red; */
+    
+}
+
+div.header_left , div.header_right{
+    padding-top: 40px;
+}
+
+ul{
+    padding-left: 0;
+    
+}
+
+li.header_leftitem , li.header_rightitem{
+    /* vertical-align: bottom; */
+    display: inline-block;
+    /* border: 1px solid blue; */
+    font-size: 0px;
+}
+
+li.header_leftitem > a{
+    height: 34px;
+    /* border: 1px solid blue; */
+    font-size: 16px;
+    padding: 5px;
+    /* text-align: enter; */
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+li.header_leftitem > a :hover{
+    text-decoration: underline #FFA6A6; 
+    font-weight: bold;
+    
+}
+
+li.header_leftitem > a :visited{
+    color: black;
+}
+
+li.header_rightitem > a{
+    height: 34px;
+    /* border: 1px solid blue; */
+    font-size: 16px;
+    padding: 5px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+li.header_rightitem > a :hover{
+    text-decoration: underline #FFA6A6; 
+    font-weight: bold;
+    
+}
+
+li.header_rightitem > a:visited{
+    color: black;
+}
+
+div.logo a{
+    height: 80px;
+}
+
+img.logo{
+    width: 120px;
+    padding:0px 10px 10px 10px;
+
+}
+
+div.header_icon{
+    vertical-align: bottom;
+    padding-top: 40px;
+    margin-left: 10px;
+}
+
+img.icon{
+    height: 50px;
+    vertical-align: bottom;
+    padding: 5px;
+    margin: 0px 20px 10px 20px;
+}
+
+

@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+    font-family: "微軟正黑體","Prestige Elite Std Bold";
+}
+
+div.banner{
+    width: 1000px;
+    font-size: 0;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+div.banner img{
+    width: 1000px;
+    
+}

@@ -1,0 +1,201 @@
+@import url(./header.css);
+@import url(./banner.css);
+@import url(./footer.css);
+
+*{
+    box-sizing: border-box;
+    font-family: "微軟正黑體","Prestige Elite Std Bold";
+}
+
+a{
+    text-decoration: none;
+}
+
+body.body_area{
+    background-color: #FCE7DD;
+    font-size: 0;
+    margin: 0;
+}
+
+div.menuarea{
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: 160px 160px 160px 160px;
+    gap: 20px;
+    width: 700px;
+    margin: 0 auto;
+    padding-bottom: 15px;
+}
+
+div.menuitem{
+    /* border: 1px solid blue; */
+    width: 160px;
+}
+
+div.menuitem_img img{
+    width: 158px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+
+
+p.menuitem_name{
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+    text-decoration: underline #FFA6A6; 
+}
+
+div.middlespace{
+    /* border: 1px solid red; */
+    /* background-color: white; */
+    width: 700px;
+    margin: 0 auto;
+    font-size: 0px;
+    padding: 15px 0px;
+}
+
+div.newsarea{
+    width: 700px;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    font-size: 0;
+}
+
+div.newsarea_left , div.newsarea_right{
+    height: 250px;
+    /* border: 1px solid green; */
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+div.newsarea_left img{
+    width: 350px;
+}
+
+div.newsarea_right{
+    width: calc(100% - 350px);
+    /* border: 1px solid black; */
+    padding: 10px;
+    background-color: white;
+}
+
+p.newstitle{
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+    text-decoration: underline #FFA6A6; 
+}
+
+div.aboutarea{
+    width: 700px;
+    /* border: 1px solid blue; */
+    margin: 0 auto;
+    font-size: 0;
+}
+
+div.aboutarea_left , div.aboutarea_right{
+    height: 250px;
+    /* border: 1px solid green; */
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+div.aboutarea_left{
+    width: 350px;
+    /* border: 1px solid black; */
+    padding: 10px;
+    background-color: white;
+
+}
+
+p.abouttitle{
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+    text-decoration: underline #FFA6A6; 
+}
+
+p.aboutcontent{
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+    padding-top: 15px;
+}
+
+div.aboutarea_right img{
+    width: 350px;
+    text-align: right;
+    
+}
+
+div.bookingarea{
+    width: 800px;
+    height: 380px;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    padding: 15px 0px;
+    font-size: 0;
+}
+
+div.bookingarea img{
+    width: 800px;
+}
+
+button.bookingbtn{
+    border: 1px solid #E05648;
+    background-color: #FFF;
+    height: 35px;
+    border-radius: .25rem;
+    font-size: 16px;
+    transition: all .1s linear;
+    position: relative;
+    left: 600px;
+    bottom: 100px;
+}
+
+button.bookingbtn:hover{
+    background-color: #E05648;
+    cursor: pointer;
+}
+
+a.bookingbtn{
+    text-decoration: none;
+    color: #E05648;
+    padding: 6px 20px;
+    border-radius: .25rem;
+    font-size: 16px;
+}
+
+a.bookingbtn:hover{
+    color: #FFF;
+}
+
+a.bookingbtn:visited{
+    color: #E05648;
+}
+
+div.contactarea{
+    width: 800px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+h3.title{
+    font-size: 24px;
+    margin: 0;
+    text-decoration: underline #FFA6A6; 
+    padding-bottom: 10px;
+    font-weight: normal;
+}
+
+div.map iframe{
+    width: 800px;
+    height: 300px;
+    border: 0;
+}
+
+div.map_content{
+    
+}

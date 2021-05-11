@@ -1,0 +1,70 @@
+@import url(./header.css);
+@import url(./banner.css);
+@import url(./footer.css);
+
+*{
+    box-sizing: border-box;
+    font-family: "微軟正黑體","Prestige Elite Std Bold";
+
+}
+
+body.body_area{
+    background-color: #FCE7DD;
+    font-size: 0;
+    margin: 0;
+}
+
+div.bookingarea{
+    border: 1px solid red;
+    width: 900px;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    font-size: 0px;
+}
+
+h2.pagetitle{
+    font-size: 24px;
+    margin-left: 20px;
+    text-decoration: underline #FFA6A6; 
+    font-weight: normal;
+}
+
+div.bookingmessage{
+    border: 1px solid blue;
+    width: 800px;
+    margin: 0 auto;
+}
+
+div.bookingmessage form{
+    font-size: 16px;
+}
+
+form.message label{
+    margin-left: 20px;
+    padding-bottom: 20px;
+    text-align: top;
+}
+
+div.bookinginfo{
+    border: 1px solid green;
+    width: 800px;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+div.bkinfo_left{
+    border: 1px solid purple;
+    width: 400px;
+    height: 250px;
+}
+
+div.bkinfo_right{
+    border: 1px solid orange;
+    width: calc( 100% - 400px );
+    height: 250px;
+}
+
+div.bkinfo_left , div.bkinfo_right{
+    display: inline-block;
+    vertical-align: top;
+}

@@ -118,10 +118,11 @@ p.abouttitle{
 }
 
 p.aboutcontent{
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
     margin: 0;
     padding-top: 15px;
+    line-height: 1.7;
 }
 
 div.aboutarea_right img{
@@ -143,6 +144,14 @@ div.bookingarea img{
     width: 800px;
 }
 
+a.bookingbtn{
+    text-decoration: none;
+    color: #E05648;
+    padding: 6px 20px;
+    border-radius: .25rem;
+    font-size: 16px;
+}
+
 button.bookingbtn{
     border: 1px solid #E05648;
     background-color: #FFF;
@@ -155,25 +164,13 @@ button.bookingbtn{
     bottom: 100px;
 }
 
-button.bookingbtn:hover{
-    background-color: #E05648;
-    cursor: pointer;
-}
-
-a.bookingbtn{
-    text-decoration: none;
-    color: #E05648;
-    padding: 6px 20px;
-    border-radius: .25rem;
-    font-size: 16px;
-}
-
 a.bookingbtn:hover{
     color: #FFF;
 }
 
-a.bookingbtn:visited{
-    color: #E05648;
+button.bookingbtn:hover{
+    background-color: #E05648;
+    cursor: pointer;
 }
 
 div.contactarea{

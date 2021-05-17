@@ -14,6 +14,23 @@ body.body_area{
     margin: 0;
 }
 
+button.go_top{
+    width: 40px;
+    height: 40px;
+    background: none;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    color: white;
+    background-color: #FFA6A6;
+    border-radius: 10px;
+    font-size: 20px;
+    line-height: 1;
+    outline: none;
+    cursor: pointer;
+    font-size: 12px;
+}
+
 div.menuarea{
     border: 1px solid red;
     width: 900px;
@@ -42,21 +59,74 @@ div.pagetitle , div.menuoption{
 div.menuoption{
     border: 1px solid green;
     font-size: 0;
-    margin-left: 100px;
+    padding: 10px;
+    margin-left: 200px;
 }
 
 div.option_item{
-    border: 1px solid blue;
+    border-bottom: 2px solid #C6CDBD;
     display: inline-block;
     font-size: 0;
-    width: 120px;
+    width: auto;
+    margin-left: 25px;
 }
 
-div.option_item > p{
+div.option_item > a{
+    color: black;
     font-size: 16px;
-    text-decoration: underline #C6CDBD ;
+    text-decoration: none;
     text-align: center;
-    margin-top: 20px;
+    padding: 10px;
+    vertical-align: baseline;
 }
 
+div.option_item > a :visited{
+    color: black;
+}
+
+div.menucontent{
+    width: 100%;
+    border: 1px solid yellow;
+}
+
+p.listtitle{
+    font-size: 16px;
+    text-decoration: underline #C6CDBD;
+    margin-bottom: 5px;
+}
+
+div.coffee{
+    border: 1px solid blue;
+    margin-bottom: 20px;
+}
+
+
+div.pancake{
+    border: 1px solid blue;
+    margin-bottom: 20px;
+}
+
+div.wine{
+    border: 1px solid blue;
+    margin-bottom: 20px;
+}
+
+div.listarea{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px ;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    border: 1px solid tomato;
+}
+
+div.mlist{
+    border: 1px solid purple;
+}
+
+img.menuimg{
+    width: 200px;
+    height: 150px;
+
+}
 

@@ -5,7 +5,8 @@
     <title>好時光咖啡Coffee Time</title>
     <link rel="stylesheet" href="./css/menu.css">
 </head>
-<body class="body_area">
+<body class="body_area" id="body">
+    <a href="#body"><button type="button" class="go_top">TOP<br>↑</button></a>
     <header class="header">
         <div class="header_all">
             <div class="header_left">
@@ -32,7 +33,7 @@
                         <a href="./booking.html">線上訂位</a>
                     </li>
                     <li class="header_rightitem">
-                        <a href="./coffee.html">咖啡豆專區</a>
+                        <a href="./coffeelist.html">咖啡豆專區</a>
                     </li>
                     <li class="header_rightitem">
                         <a href="./contact.html">聯絡我們</a>
@@ -49,22 +50,66 @@
     <div class="banner">
         <img src="./img/banner/banner_madel.png" alt="banner" >
     </div>
+    <section id="coffee"></section>
     <div class="menuarea">
         <div class="pagetitle">
             <h2 class="pagetitle">MENU</h2>
         </div>
         <div class="menuoption">
             <div class="option_item">
-                <p>咖啡、茶、果汁</p>
+                <a href="#coffee">咖啡、茶、果汁</a>
             </div>
             <div class="option_item">
-                <p>鬆餅</p>
+                <a href="#pancake">鬆餅</a>
             </div>
             <div class="option_item">
-                <p>調酒</p>
+                <a href="#wine">調酒</a>
             </div>
         </div>
-        
+        <div class="menucontent">
+            <div class="coffee">
+                <p class="listtitle">咖啡、茶、果汁</p>
+                <section id="pancake"></section>
+                <div class="listarea">
+                    <div class="mlist"><img src="#" class="menuimg"></div>
+                    <div class="mlist"><img src="#" class="menuimg"></div>
+                    <div class="mlist"><img src="#" class="menuimg"></div>
+                    <div class="mlist"><img src="#" class="menuimg"></div>
+                    <div class="mlist"><img src="#" class="menuimg"></div>
+                    <div class="mlist"><img src="#" class="menuimg"></div>
+                    <div class="mlist"><img src="#" class="menuimg"></div>
+                    <div class="mlist"><img src="#" class="menuimg"></div>
+                </div>
+            </div>
+            <div class="pancake">
+                <p class="listtitle" >鬆餅</p>
+                <section id="wine"></section>
+                <div class="listarea">
+                    <div class="mlist"><img src="#" class="menuimg"></div>
+                    <div class="mlist"><img src="#" class="menuimg"></div>
+                    <div class="mlist"><img src="#" class="menuimg"></div>
+                    <div class="mlist"><img src="#" class="menuimg"></div>
+                    <div class="mlist"><img src="#" class="menuimg"></div>
+                    <div class="mlist"><img src="#" class="menuimg"></div>
+                    <div class="mlist"><img src="#" class="menuimg"></div>
+                    <div class="mlist"><img src="#" class="menuimg"></div>
+                </div>
+                
+            </div>
+            <div class="wine">
+                <p class="listtitle" >調酒</p>
+                <div class="listarea">
+                    <div class="mlist"><img src="#" class="menuimg"></div>
+                    <div class="mlist"><img src="#" class="menuimg"></div>
+                    <div class="mlist"><img src="#" class="menuimg"></div>
+                    <div class="mlist"><img src="#" class="menuimg"></div>
+                    <div class="mlist"><img src="#" class="menuimg"></div>
+                    <div class="mlist"><img src="#" class="menuimg"></div>
+                    <div class="mlist"><img src="#" class="menuimg"></div>
+                    <div class="mlist"><img src="#" class="menuimg"></div>
+                </div>
+            </div>
+        </div>
     </div>
     <footer class="footer">
         <div class="footer_all">
@@ -97,6 +142,6 @@
             </div>                
         </div>
     </footer>
-    
+
 </body>
 </html>

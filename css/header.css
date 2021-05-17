@@ -53,10 +53,9 @@ li.header_leftitem > a{
     color: black;
 }
 
-li.header_leftitem > a :hover{
-    text-decoration: underline #FFA6A6; 
-    font-weight: bold;
-    
+li.header_leftitem:hover , li.header_rightitem:hover{
+    text-decoration: underline; 
+    color:#E05648 ;
 }
 
 li.header_leftitem > a :visited{
@@ -71,12 +70,6 @@ li.header_rightitem > a{
     margin-left: 10px;
     text-decoration: none;
     color: black;
-}
-
-li.header_rightitem > a :hover{
-    text-decoration: underline #FFA6A6; 
-    font-weight: bold;
-    
 }
 
 li.header_rightitem > a:visited{

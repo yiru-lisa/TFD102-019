@@ -58,8 +58,11 @@ div.footeritem a{
     display: inline-block;
     height: 32px;
     line-height: 1.6;
+    color: black;
+}
 
-
+div.footeritem a:visited{
+    color: black;
 }
 
 div.footer_right{

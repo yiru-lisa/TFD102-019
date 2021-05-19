@@ -186,7 +186,8 @@ button.clean a{
 }
 
 button.clean a:hover{
-    color: #E05648;
+    color: white;
+    font-weight: bold;
 }
 
 button.clean:hover{
@@ -223,7 +224,8 @@ button.submit a{
 }
 
 button.submit a:hover{
-    color: #E05648;
+    color: white;
+    font-weight: bold;
 }
 
 button.submit:hover{

@@ -237,7 +237,7 @@ button.addtocart a{
 }
 
 button.addtocart a:hover{
-    color: #e05648;
+    color: white;
     font-weight: bold;
 
     
@@ -253,8 +253,8 @@ button.addtocart:hover{
 
 button.addtocart a:visited{
     border: 0;
-    background-color: #C6CDBD;
-    color: #FFF;
+    background-color: #ffa6a6;
+    color: white;
 }
 
 button.buynow{
@@ -276,7 +276,8 @@ button.buynow a{
 }
 
 button.buynow a:hover{
-    color: #E05648;
+    color: white;
+    font-weight: bold;
 }
 
 button.buynow:hover{
@@ -289,8 +290,8 @@ button.buynow:hover{
 
 button.buynow a:visited{
     border: 0;
-    background-color: #C6CDBD;
-    color: #FFF;
+    background-color: #E05648;
+    color: white;
 }
 
 div.product_content{

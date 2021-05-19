@@ -73,10 +73,21 @@ ul > li.itemlist{
     width: 120px;
 }
 
-ul li.itemlist > p{
+ul li.itemlist > a{
     font-size: 12px;
     margin: 0px;
     line-height: 1.6;
+}
+
+ul li.itemlist > a:hover{
+    color: #e05648;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+ul li.itemlist > a:visited{
+    color: black;
 }
 
 div.main{

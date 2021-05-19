@@ -81,11 +81,10 @@ ul li.itemlist > a{
 }
 
 ul li.itemlist > a:hover{
-    color: #E05648;
+    color: #e05648;
     font-weight: bold;
-    text-decoration: underline;
+    text-decoration: underline #E05648;
 }
-
 
 ul li.itemlist > a:visited{
     color: black;

@@ -82,7 +82,7 @@ ul li.itemlist > a{
 ul li.itemlist > a:hover{
     color: #e05648;
     font-weight: bold;
-    text-decoration: underline;
+    text-decoration: underline #E05648;
 }
 
 

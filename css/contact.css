@@ -106,17 +106,32 @@ div.info div.btn{
 button.bookingbtn{
     border: 0;
     background-color: #FFA6A6;
-    color: red;
-    padding: .375rem .75rem;
-    border-radius: .25rem;
+    color: white;
+    border-radius: 5px;
     font-size: 12px;
     transition: all .1s linear;
+    width: 100px;
+    height: 25px;
+    padding: 0;
 }
 
 button.bookingbtn:hover{
     cursor: pointer;
     background-color: #E05648;
     color: #FFF;
+}
+
+button.bookingbtn > a{
+    color: white;
+    padding: 5px 12px;
+    border-radius: 5px;
+}
+
+button.bookingbtn > a:hover{
+    cursor: pointer;
+    background-color: #E05648;
+    color: #FFF;
+    font-weight: bold;
 }
 
 button.bookingbtn > a:visited{

@@ -78,6 +78,7 @@ ul li.itemlist > a{
     font-size: 12px;
     margin: 0px;
     line-height: 1.6;
+    color: black;
 }
 
 ul li.itemlist > a:hover{

@@ -54,7 +54,12 @@ div.item{
     border-bottom: 2px solid #C6CDBD;
     width: 160px;
     margin: 0 auto;
-    padding-top: 5px;
+    padding-top: 10px;
+}
+
+div.item:first-child{
+    border-bottom: 2px solid #e05648;
+
 }
 
 div.item p{
@@ -63,13 +68,13 @@ div.item p{
     line-height: 2;
 }
 
-li.itemlist{
-    border: 1px solid purple;
+ul > li.itemlist{
+    /* border: 1px solid purple; */
     margin: 0 auto;
     width: 120px;
 }
 
-li.itemlist p{
+ul li.itemlist > p{
     font-size: 12px;
     margin: 0px;
     line-height: 1.6;
@@ -221,13 +226,15 @@ button.addtocart a{
 
 button.addtocart a:hover{
     color: #e05648;
+    font-weight: bold;
+
     
 }
 
 button.addtocart:hover{
     cursor: pointer;
-    background-color: white;
-    color: #FFA6A6;
+    background-color: #ffa6a6;
+    color: white;
     font-weight: bold;
     
 }
@@ -262,8 +269,8 @@ button.buynow a:hover{
 
 button.buynow:hover{
     cursor: pointer;
-    background-color: white;
-    color: #E05648;
+    background-color: #E05648;
+    color: white;
     font-weight: bold;
     
 }
@@ -317,6 +324,7 @@ button.backtolastpage:hover{
     background-color: #C6CDBD;
     color: #FFF;
     border: 1px solid white;
+    font-weight: bold;
 }
 
 button.backtolastpage a:visited{

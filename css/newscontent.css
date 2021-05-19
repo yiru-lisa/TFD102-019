@@ -1,0 +1,124 @@
+@import url(./header.css);
+@import url(./banner.css);
+@import url(./footer.css);
+
+*{
+    box-sizing: border-box;
+    font-family: "微軟正黑體","Prestige Elite Std Bold";
+}
+
+body.body_area{
+    background-color: #FCE7DD;
+    font-size: 0;
+    margin: 0;
+}
+
+div.newscontentarea{
+    /* border: 1px solid red; */
+    width: 900px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    background-color: white;
+}
+
+h3.title{
+    font-size: 24px;
+    margin: 10px 0px 5px 50px;
+    text-decoration: underline #FFA6A6; 
+    font-weight: normal; 
+}
+
+div.contentspace{
+    /* border: 1px solid purple; */
+    width: 800px;
+    margin: 0 auto;
+    padding: 0px 0px 10px 0px;
+}
+div.contentspace > p.newsdate{
+    font-size: 12px;
+    margin: 0;
+
+
+}
+
+div.contentspace > p.content{
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 40px;
+
+}
+
+p > a{
+    color: #e05648;
+    text-decoration: underline;
+    margin: 0;
+    padding: 0;
+}
+
+div.picture{
+    width: 800px;
+    /* border: 1px solid blue; */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 390px 390px ;
+    grid-template-rows: 250px 250px ;
+    gap: 5px;
+}
+
+div.picturespace{
+    /* border: 1px solid green; */
+    /* padding: 10px; */
+}
+
+div.picturespace img{
+    width: 100%;
+    height: 100%;
+}
+
+div.blank{
+    /* border: 1px solid blue; */
+    padding: 0px 20px 40px 500px;
+    width: 900px;
+    margin: 0 auto;
+}
+
+div.btn_back{
+    /* border: 1px solid green; */
+    width: 115px;
+    height: 30px;
+    position: relative;
+    left: 280px;
+    margin-top: 10px;
+}
+
+button.backtolastpage{
+    border: 0;
+    background-color: #C6CDBD;
+    color: white;
+    padding: 5px 0px;
+    border-radius: .25rem;
+    font-size: 12px;
+    transition: all .1s linear;
+    width: 110px;
+}
+
+button.backtolastpage a{
+    color: white;
+    padding: 5px 5px;
+    border-radius: .25rem;
+    font-size: 12px;
+}
+
+button.backtolastpage:hover{
+    cursor: pointer;
+    background-color: #C6CDBD;
+    color: #FFF;
+    border: 1px solid white;
+}
+
+button.backtolastpage a:visited{
+    border: 0;
+    background-color: #C6CDBD;
+    color: #FFF;
+}

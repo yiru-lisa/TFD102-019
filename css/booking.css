@@ -15,10 +15,10 @@ body.body_area{
 }
 
 div.bookingarea{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 900px;
     margin: 0 auto;
-    padding-bottom: 15px;
+    padding-bottom: 50px;
     font-size: 0px;
 }
 
@@ -30,13 +30,16 @@ h2.pagetitle{
 }
 
 div.bookingmessage{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     width: 800px;
     margin: 0 auto;
+    background-color: white;
+    padding: 30px 0px 10px 0px;
 }
 
 div.bookingmessage form{
-    font-size: 16px;
+    font-size: 14px;
+    margin-left: 40px;
 }
 
 form.message label{
@@ -45,26 +48,133 @@ form.message label{
     text-align: top;
 }
 
+div.btn_block{
+    /* border: 1px solid red; */
+    width: fit-content;
+    margin: 0 auto;
+}
+
+button.clean{
+    border: 0;
+    background-color: #C6CDBD;
+    color: white;
+    padding: 5px 0px;
+    border-radius: .25rem;
+    font-size: 12px;
+    transition: all .1s linear;
+    width: 100px;
+    
+}
+
+button.clean a{
+    color: white;
+    padding: 5px 25px;
+    border-radius: .25rem;
+    font-size: 12px;
+}
+
+button.clean a:hover{
+    color: white;
+}
+
+button.clean:hover{
+    cursor: pointer;
+    background-color: #C6CDBD;
+    color: white;
+    font-weight: bold;
+    
+}
+
+button.clean a:visited{
+    border: 0;
+    background-color: #C6CDBD;
+    color: #FFF;
+}
+
+
+button.submit{
+    border: 0;
+    background-color: #E05648;
+    color: white;
+    padding: 5px 0px;
+    border-radius: .25rem;
+    font-size: 12px;
+    transition: all .1s linear;
+    width: 100px;
+    margin-left: 5px;
+}
+
+button.submit a{
+    color: white;
+    padding: 5px 25px;
+    border-radius: .25rem;
+    font-size: 12px;
+}
+
+button.submit a:hover{
+    color: white;
+}
+
+button.submit:hover{
+    cursor: pointer;
+    background-color: #E05648;
+    color: white;
+    font-weight: bold;
+    
+}
+
+button.submit a:visited{
+    border: 0;
+    background-color: #C6CDBD;
+    color: #FFF;
+}
+
 div.bookinginfo{
-    border: 1px solid green;
+    /* border: 1px solid green; */
     width: 800px;
     margin: 0 auto;
-    padding-top: 15px;
+    padding-top: 30px;
 }
 
 div.bkinfo_left{
-    border: 1px solid purple;
+    /* border: 1px solid #E05648; */
     width: 400px;
     height: 250px;
+    padding: 10px 20px 10px 15px;
+    background:white;
+}
+
+div.bkinfo_left > h3 {
+    font-size: 18px;
+    padding-left: 10px;
+    text-decoration: underline #ffa6a6;
+    margin: 0px 0px 10px 0px 
+
+}
+
+div.bkinfo_left ul{
+    padding-left: 30px;
+    font-size: 14px;
+}
+
+div.bkinfo_left ul > li{
+    line-height: 2;
 }
 
 div.bkinfo_right{
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
     width: calc( 100% - 400px );
     height: 250px;
+}
+
+div.bkinfo_right img{
+    width: 400px;
+    height: 250px;
+
 }
 
 div.bkinfo_left , div.bkinfo_right{
     display: inline-block;
     vertical-align: top;
 }
+

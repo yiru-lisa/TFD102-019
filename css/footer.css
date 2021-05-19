@@ -38,10 +38,11 @@ div.footer_left img{
 }
 
 div.footer_main{
+    padding-top: 10px;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
-    column-gap: 30px;
+    column-gap: 20px;
     /* border: 1px solid red; */
 
 }
@@ -50,15 +51,20 @@ div.footeritem{
     /* border: 1px solid yellow; */
     font-size: 0;
     display: inline-block;
+    text-align: center;
 }
 
 div.footeritem a{
-    font-size: 16px;
+    font-size: 12px;
     padding: 5px;
     display: inline-block;
-    height: 32px;
+    height: 30px;
     line-height: 1.6;
     color: black;
+}
+
+div.footeritem a:hover{
+    text-decoration: underline;
 }
 
 div.footeritem a:visited{
@@ -72,8 +78,12 @@ div.footer_right{
     padding-left: 20px;
 }
 
-img.icon{
+div.footer_right a > img.icon{
     height: 25px;
     vertical-align: bottom;
-    margin: 5px 0px 10px 5px;
+    /* margin: 5px 0px 10px 5px; */
+}
+
+div.footer_right a{
+    margin-left: 10px;
 }

@@ -30,6 +30,11 @@ div.menuarea{
 div.menuitem{
     /* border: 1px solid blue; */
     width: 160px;
+    padding-top: 10px;
+}
+
+div.menuitem:nth-child(2), div.menuitem:nth-child(4){
+    padding-top:30px;
 }
 
 div.menuitem_img img{
@@ -81,11 +86,35 @@ div.newsarea_right{
     background-color: white;
 }
 
-p.newstitle{
+div.newsarea_right > p.newstitle{
     font-size: 16px;
     text-align: center;
-    margin: 0;
+    margin: 20px 0px;
     text-decoration: underline #FFA6A6; 
+}
+
+div.newsarea_right > p.newslist{
+    font-size: 12px;
+    border-bottom: 1px solid #c6cdbd;
+    width: 270px;
+    margin: 10px 2px 5px 20px;
+}
+
+p.newslist > a{
+    font-size: 12px;
+    margin-left: 5px;
+    color: black
+}
+
+p.newslist > a:hover{
+    color: #E05648;
+    font-weight: bold;
+
+}
+
+p.newslist > span{
+    font-weight: bold;
+
 }
 
 div.aboutarea{
@@ -118,11 +147,11 @@ p.abouttitle{
 }
 
 p.aboutcontent{
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
     margin: 0;
     padding-top: 15px;
-    line-height: 1.7;
+    line-height: 1.9;
 }
 
 div.aboutarea_right img{

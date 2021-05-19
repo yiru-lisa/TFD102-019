@@ -29,10 +29,11 @@ button.go_top{
     outline: none;
     cursor: pointer;
     font-size: 12px;
+    
 }
 
 div.menuarea{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 900px;
     margin: 0 auto;
     padding-bottom: 15px;
@@ -40,7 +41,7 @@ div.menuarea{
 }
 
 div.pagetitle{
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
     width: 250px;
     font-size: 0;
 }
@@ -57,10 +58,10 @@ div.pagetitle , div.menuoption{
 }
 
 div.menuoption{
-    border: 1px solid green;
+    /* border: 1px solid green; */
     font-size: 0;
     padding: 10px;
-    margin-left: 200px;
+    margin-left: 300px;
 }
 
 div.option_item{
@@ -80,53 +81,78 @@ div.option_item > a{
     vertical-align: baseline;
 }
 
+div.option_item > a:hover{
+    font-weight: bold;
+}
+
 div.option_item > a :visited{
     color: black;
 }
 
 div.menucontent{
     width: 100%;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
 }
 
 p.listtitle{
-    font-size: 16px;
+    font-size: 18px;
     text-decoration: underline #C6CDBD;
     margin-bottom: 5px;
+    margin-left: 20px;
+    font-weight: bold;
 }
 
 div.coffee{
-    border: 1px solid blue;
-    margin-bottom: 20px;
+    /* border: 1px solid blue; */
+
+    background-color: white;
+    padding: 10px 10px 20px 10px;
 }
 
 
 div.pancake{
-    border: 1px solid blue;
-    margin-bottom: 20px;
+    border: 2px solid white;
+    padding: 10px 10px 20px 10px;
 }
 
 div.wine{
-    border: 1px solid blue;
-    margin-bottom: 20px;
+    /* border: 1px solid blue; */
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 10px 10px 30px 10px;
 }
 
 div.listarea{
-    width: 100%;
+    margin: 0 auto;
+    width: min-content;
     display: grid;
-    grid-template-columns: 200px 200px 200px 200px ;
+    grid-template-columns: auto auto auto auto ;
     grid-template-rows: auto auto;
-    gap: 10px;
-    border: 1px solid tomato;
+    gap: 15px;
+    /* border: 1px solid tomato; */
 }
 
 div.mlist{
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
+    width: max-content;
+    border-radius: 5px;
 }
 
-img.menuimg{
+div.mlist:hover{
+    background-color: #ecccb3;
+    font-weight: bold;
+}
+
+div.mlist > img.menuimg{
     width: 200px;
     height: 150px;
+
+}
+
+div.mlist > p{
+    font-size: 14px;
+    margin: 0;
+    text-align: center;
 
 }
 

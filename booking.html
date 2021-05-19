@@ -40,14 +40,14 @@
                 </ul>
             </div>
             <div class="header_icon">
-                <img class="icon" src="./img/header/manber_icon.png" alt="">
-                <img class="icon" src="./img/header/manber_icon.png" alt="">                
+                <a href="#"><img class="icon" src="./img/header/manber_icon.png" alt="會員登入"></a>
+                <a href="#"><img class="icon" src="./img/header/cart_icon.png" alt="購物車"></a>                
             </div>
         </div>
     </header>
 
     <div class="banner">
-        <img src="./img/banner/banner_madel.png" alt="banner" >
+        <img src="./img/banner/banner_booking.png" alt="banner" >
     </div>
     <div class="bookingarea">
         <h2 class="pagetitle">線上訂位</h2>
@@ -62,11 +62,27 @@
                 </label>
                 <br><br>
                 <label name="people">人數：
-                    <input type="number" name="people" min="1">
+                    <input type="number" name="people" min="1" max="8">
                 </label>
                 <br><br>
                 <label name="orderdate">訂位日期：
                     <input type="date" name="orderdate">
+                </label>
+                <br><br>
+                <label name="ordertime">欲訂位時間：
+                    <select class="custom_select">
+                        <option>10:00am</option>
+                        <option>11:00am</option>
+                        <option>12:00pm</option>
+                        <option>13:00pm</option>
+                        <option>14:00pm</option>
+                        <option>15:00pm</option>
+                        <option>16:00pm</option>
+                        <option>17:00pm</option>
+                        <option>18:00pm</option>
+                        <option>19:00pm</option>
+                        <option>20:00pm</option>
+                    </select>
                 </label>
                 <br><br>
                 <label>訂位目的：</label>
@@ -84,18 +100,31 @@
                 </label>
                 <br><br>
                 <label name="notes">其他備註：
-                <textarea name="notes" rows="5" cols="30"></textarea>
+                <textarea name="notes" rows="5" cols="55"></textarea>
                 </label>
-                <br><br>
-                <button type="submit">資料送出</button>
-              
-              
-              
+                <br><br>        
+                <div class="btn_block">
+                    <button type="button" class="clean">
+                        <a href="#">重新填寫</a>
+                    </button>
+                    <button type="button" class="submit">
+                        <a href="#">確認送出</a>
+                    </button>
+                </div>
             </form>
         </div>
         <div class="bookinginfo">
-            <div class="bkinfo_left"></div>
+            <div class="bkinfo_left">
+                <h3>訂位注意事項</h3>
+                <ul>
+                    <li>營業時間為08:00am-22:00pm<br>開放訂位時間為10:00am-20:00pm</li>
+                    <li>預先訂位用餐時間為2小時</li>
+                    <li>如需取消訂位，或訂位人數超過8人，請來電與門市人員確認。</li>
+                    <li>以上事項以外，如有特殊需求，請註明於備註，也麻煩電話與門市人員進行確認唷!</li>
+                </ul>
+            </div>
             <div class="bkinfo_right">
+                <img src="./img/booking/booking_info.png">
             </div>
         </div>
 
@@ -120,15 +149,15 @@
                     <a href="./booking.html">線上訂位</a>
                 </div>
                 <div class="footeritem">
-                    <a href="./coffee.html">咖啡豆專區</a>
+                    <a href="./coffeelist.html">咖啡豆專區</a>
                 </div>
                 <div class="footeritem">
                     <a href="./contact.html">聯絡我們</a>
                 </div>
             </div>
             <div class="footer_right">
-                <img class="icon" src="./img/header/manber_icon.png" alt="">
-                <img class="icon" src="./img/header/manber_icon.png" alt="">
+                <a href="https://www.facebook.com/" target="_blank"><img class="icon" src="./img/footer/fb_icon.png" alt="FB"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img class="icon" src="./img/footer/ig_icon.png" alt="IG"></a>
             </div>                
         </div>
     </footer>

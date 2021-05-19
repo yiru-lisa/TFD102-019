@@ -15,6 +15,7 @@ div.header_all{
     display: flex;
     justify-content: center;
     width: 100%;
+    padding-bottom: 8px;
 
     
 }
@@ -89,14 +90,20 @@ img.logo{
 div.header_icon{
     vertical-align: bottom;
     padding-top: 40px;
-    margin-left: 10px;
+    padding-left: 35px;
+
 }
 
-img.icon{
-    height: 50px;
+div.header_all div.header_icon a > img.icon{
+    width: 20px;
+    height: 20px;
     vertical-align: bottom;
-    padding: 5px;
-    margin: 0px 20px 10px 20px;
+    margin: 0;
+}
+
+div.header_all div.header_icon a > img.icon:last-child{
+    margin-left: 10px;
+
 }
 
 

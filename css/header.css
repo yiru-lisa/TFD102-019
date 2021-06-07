@@ -261,8 +261,8 @@ div.rwd-header{
     /* border: 1px solid orangered; */
     background-color: white;
     /* display: none; */
-    /* transform: translateX(-100%);
-    transition: all 1s; */
+    transform: translateX(-100%);
+    transition: all 1s;
     position: fixed;
     top:65px;
     left: 0;

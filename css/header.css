@@ -7,6 +7,7 @@ header.header{
     background-color: white;
     position: sticky;
     top: 0;
+    z-index: 2;
     
 }
 
@@ -16,8 +17,11 @@ div.header_all{
     justify-content: center;
     width: 100%;
     padding-bottom: 8px;
-
-    
+}
+@media (max-width: 767px){
+    div.header_all{
+        display: none;
+    }
 }
 
 div.header_left , div.header_logo , div.header_right{
@@ -26,6 +30,8 @@ div.header_left , div.header_logo , div.header_right{
     /* border: 1px solid red; */
     
 }
+
+
 
 div.header_left , div.header_right{
     padding-top: 40px;
@@ -46,7 +52,7 @@ li.header_leftitem , li.header_rightitem{
 li.header_leftitem > a{
     height: 34px;
     /* border: 1px solid blue; */
-    font-size: 16px;
+    font-size: 1rem;
     padding: 5px;
     /* text-align: enter; */
     margin-right: 10px;
@@ -68,7 +74,7 @@ li.header_leftitem > a :visited{
 li.header_rightitem > a{
     height: 34px;
     /* border: 1px solid blue; */
-    font-size: 16px;
+    font-size: 1rem;
     padding: 5px;
     margin-left: 10px;
     text-decoration: none;
@@ -84,12 +90,14 @@ li.header_rightitem > a:visited{
     color: black;
 }
 
+
+
 div.logo a{
     height: 80px;
 }
 
-img.logo{
-    width: 120px;
+a > img.logo{
+    max-width: 120px;
     padding:0px 10px 10px 10px;
 
 }
@@ -113,4 +121,192 @@ div.header_all div.header_icon a > img.icon:last-child{
 
 }
 
+div.header_logo_rwd{
+    width: 120px;
+    margin: 0 auto;
+    display: none;
+}
+@media (max-width: 767px){
+    div.header_logo_rwd{
+        height: fit-content;
+        display: block;
+    }
+}
 
+div.header_logo_rwd a{
+    width: fit-content;
+}
+@media (max-width: 767px){
+    div.header_logo_rwd a{
+        width: fit-content;
+    }
+}
+
+img.logo_rwd{
+    max-width: 120px;
+    padding:0px 10px 10px 10px;
+
+}
+
+div.header_icon_rwd{
+    display: none;
+    width: fit-content;
+
+}
+@media (max-width: 767px){
+    div.header_icon_rwd{
+        display: block;
+        position: fixed;
+        right:10px;
+        top: 20px;
+    }
+}
+
+
+div.header_icon_rwd a > img.icon{
+    width: 20px;
+    height: 20px;
+    vertical-align: bottom;
+    margin: 0;
+}
+
+div.header_icon_rwd a > img.icon:last-child{
+    margin-left: 10px;
+
+}
+
+div.hamburger{
+    /* border: 1px solid red; */
+    min-height: fit-content;
+    max-width: fit-content;
+    display: none;
+    
+    
+}
+@media (max-width: 767px){
+    div.hamburger{
+        display: block;
+        position: fixed;
+        top:10px;
+        left: 10px;
+    }
+}
+
+div.hamburger button.hamburger_icon{
+    /* border: 1px solid black; */
+    border: none;
+    width: 40px;
+    height: 40px;
+
+    cursor: pointer;
+    outline: none;
+    background: none;
+}
+
+/* 漢堡按鈕樣式 */
+/* 橫線的樣式 */
+button.hamburger_icon span.-hr{
+height: 2px;
+width: 80%;
+background-color: #FFA6A6;
+display: inline-block;
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+transition: all 0.5s;
+}
+
+/* 最上面那條線的樣式 */
+button.hamburger_icon span.-hr.-top{
+top: 25%;
+}
+
+/* 最下面那條線的樣式 */
+button.hamburger_icon span.-hr.-bottom{
+top: 75%;
+}
+  
+  
+  
+/* -on 的狀態 */
+/* 上方的線 */
+button.hamburger_icon.-on span.-hr.-top{
+transform-origin: top left;
+top: 5px;
+left: 6px;
+width: 102%;
+transform: rotate(45deg);
+transition: all 0.5s;
+}
+/* 中間的線 */
+button.hamburger_icon.-on span.-hr.-middle{
+opacity: 0;
+}
+/* 下方的線 */
+button.hamburger_icon.-on span.-hr.-bottom{
+transform-origin: top left;
+bottom: 5px;
+left: 6px;
+width: 102%;
+transform: rotate(-45deg);
+transition: all 0.5s;
+
+top: auto;
+}
+
+/* =====隱藏選單===== */
+
+div.rwd-header{
+    /* border: 1px solid orangered; */
+    background-color: white;
+    /* display: none; */
+    transform: translateX(-100%);
+    transition: all 1s;
+    position: fixed;
+    top:65px;
+    left: 0;
+    width: 100%;
+}
+
+div.rwd-header.-on{
+    display: inline-block;
+    transform: translateX(0%);
+    transition: all 1s;
+
+}
+
+div.rwd-header ul.header_list{
+    /* border: 1px solid blue; */
+    margin: 5px 0px;
+
+}
+div.rwd-header ul.header_list > li{
+    /* border: 1px solid green; */
+    border-bottom:2px solid #FFA6A6;
+    padding: 10px 0px;
+    text-align: center;
+
+}
+
+div.rwd-header ul.header_list > li:hover{
+    background-color: #E05648;
+    border-bottom:2px solid #E05648;
+}
+
+div.rwd-header ul.header_list > li:first-child{
+    border-top:2px solid #FFA6A6;
+}
+
+div.rwd-header ul.header_list > li a{
+    /* border: 1px solid red; */
+    padding: 10px 40%;
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+div.rwd-header ul.header_list > li a:hover{
+    color: white;
+    font-weight: bold;
+}

@@ -15,12 +15,18 @@ body.body_area{
 }
 
 div.newsarea{
-    /* border: 1px solid red; */
-    width: 900px;
+    border: 1px solid red;
+    width: 70%;
     margin: 0 auto;
     padding-bottom: 15px;
     font-size: 0px;
     height: 600px;
+}
+@media (max-width: 767px){
+    div.newsarea{
+        width: 100%;
+        padding: 5px 0px;
+    }
 }
 
 h2.pagetitle{
@@ -31,39 +37,79 @@ h2.pagetitle{
 }
 
 div.news_list{
-    /* border: 1px solid black; */
+    border: 1px solid black;
     width: 100%;
     
 }
 
 div.news_list ul.news_list{
-    /* border:1px solid tomato; */
-    width: 850px;
+    border:1px solid tomato;
+    width: 100%;
     margin: 0 auto;
-    padding: 30px;
+    padding: 30px 15px;
     background-color: white;
 }
 
 div.news_list ul.news_list > li{
     border-bottom: 2px solid #c6cdbd;
     margin:0px 20px 10px 20px;
+    display: flex;
+    padding-bottom: 10px;
+}
+@media (max-width: 767px){
+    div.news_list ul.news_list > li{
+        margin: 0px 0px 10px 0px;
+        
+    }
 }
 
-ul.news_list li > img, ul.news_list li > div.news_item, ul.news_list li > a{
+/* ul.news_list li div.news_img > img, ul.news_list li > div.news_item, ul.news_list li > a{
     display: inline-block;
     vertical-align: bottom;
     margin-bottom: 10px;
+}  */
+
+
+ul.news_list li > div.news_img{
+    border: 1px solid peru;
+    width: 20%;
+    height: fit-content;
+}
+@media (max-width: 999px){
+    ul.news_list li > div.news_img{
+        display: none;
+    }
+}
+@media (max-width: 767px){
+    ul.news_list li > div.news_img{
+        display: block;
+        /* order: 1; */
+    }
 }
 
-ul.news_list li > img{
-    width: 120px;
-    
+ul.news_list li div.news_img >img{
+    width: 100%;
+    /* height: 100%; */
+
 }
+
+
 
 ul.news_list li > div.news_item{
-    /* border: 1px solid blue; */
-    margin:0px 30px 10px 20px;
-    width: 500px;
+    border: 1px solid blue;
+    margin:0px 10px 10px 10px;
+    width: 65%;
+}
+@media (max-width: 999px){
+    ul.news_list li > div.news_item{
+        width: 75%;
+    }
+}
+@media (max-width: 767px){
+    ul.news_list li > div.news_item{
+        margin: 0px 10px;
+        
+    }
 }
 
 div.news_item p.newstitle{
@@ -86,6 +132,9 @@ div.news_item p.newscontent{
     font-size: 16px;
     margin: 0;
     padding: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 ul.news_list li > a{

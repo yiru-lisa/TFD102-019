@@ -4,14 +4,23 @@
 }
 
 div.banner{
-    width: 900px;
+    width: 70%;
     font-size: 0;
     margin: 0 auto;
     padding-bottom: 20px;
     padding-top: 20px;
 }
+@media (max-width: 767px){
+    div.banner{
+    width: 100%;
+    padding-bottom: 5px;
+    padding-top: 0;
+
+    }
+}
 
 div.banner img{
-    width: 900px;
+    width: 100%;
     
 }
+

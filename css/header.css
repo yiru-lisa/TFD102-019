@@ -262,23 +262,25 @@ div.rwd-header{
     background-color: white;
     /* display: none; */
     transform: translateX(-100%);
-    transition: all 1s;
+    transition: transform 1s, opacity 1s;
     position: fixed;
     top:65px;
     left: 0;
     width: 100%;
+    opacity: 0;
 }
 
 div.rwd-header.-on{
-    display: inline-block;
+    /* display: block; */
     transform: translateX(0%);
-    transition: all 1s;
+    opacity: 1;
+    /* transition: all 1s; */
 
 }
 @media (min-width: 768px){
     div.rwd-header.-on{
         transform: translateX(-100%);
-        transition: all 1s;
+        /* transition: all 1s; */
     }
 }
 

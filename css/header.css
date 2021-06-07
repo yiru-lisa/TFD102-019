@@ -288,6 +288,7 @@ div.rwd-header.-on{
 div.rwd-header ul.header_list{
     /* border: 1px solid blue; */
     margin: 5px 0px;
+    width: 100%;
 
 }
 div.rwd-header ul.header_list > li{
@@ -295,6 +296,7 @@ div.rwd-header ul.header_list > li{
     border-bottom:2px solid #FFA6A6;
     padding: 10px 0px;
     text-align: center;
+    width: 100%;
 
 }
 
@@ -307,9 +309,10 @@ div.rwd-header ul.header_list > li:first-child{
     border-top:2px solid #FFA6A6;
 }
 
-div.rwd-header ul.header_list > li a{
+div.rwd-header ul.header_list li > a{
     /* border: 1px solid red; */
-    padding: 10px 40%;
+    display: inline-block;
+    width: 100%;
     font-size: 1rem;
     text-decoration: none;
     color: black;

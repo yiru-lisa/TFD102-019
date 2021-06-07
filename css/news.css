@@ -80,11 +80,11 @@ ul.news_list li > div.news_img{
 }
 @media (max-width: 767px){
     ul.news_list li > div.news_img{
-        min-width: 100px;
+        min-width: 80px;
     }
 }
 
-ul.news_list li div.news_img >img{
+ul.news_list li div.news_img a >img{
     width: 100%;
 }
 
@@ -92,13 +92,13 @@ ul.news_list li div.news_img >img{
 
 ul.news_list li > div.news_item{
     /* border: 1px solid blue; */
-    margin:0px 10px 0px 10px;
-    width: 65%;
+    padding:0px 5px 0px 10px;
+    width: 60%;
 }
 
 div.news_item p.newstitle{
     width: fit-content;
-    font-size: 1rem;
+    font-size: 0.875rem;
     margin: 0;
     padding: 5px;
     font-weight: bold;
@@ -124,34 +124,34 @@ div.news_item p.newscontent{
 }
 @media (max-width: 900px){
     div.news_item p.newscontent{
-        font-size: 0.8rem;
+        font-size: 0.875rem;
     }
 }
 
 ul.news_list li > div.news_btn_block{
     /* border: 1px solid turquoise; */
-    width: 15%;
+    width: 20%;
     position: relative;
 }
 
 ul.news_list li div.news_btn_block > button.newsbtn{
     border: 0;
-    border-radius: 5%;
-    width: 65px;
+    border-radius: 5px;
+    width: fit-content;
     height: fit-content;
     padding: 0;
     font-size: 0;
     background-color: #FFA6A6;
     position: absolute;
     bottom: 0;
-    right: 10px;
+    right: 5px;
 }
-@media (max-width: 900px){
+/* @media (max-width: 900px){
     ul.news_list li div.news_btn_block > button.newsbtn{
         margin-left: 0;
         top: 5px;
     }
-}
+} */
 
 ul.news_list li div.news_btn_block > button.newsbtn:hover{
     background-color: #e05648;
@@ -166,9 +166,9 @@ ul.news_list li div.news_btn_block button.newsbtn > a{
     display: inline-block;
     color: white;
     margin: 0 auto;
-    width: 65px;
+    width: 45px;
     height: fit-content;
-    padding: 8px 0px;
+    padding: 3px 0px;
     
     /* text-decoration: underline; */
 }

@@ -2,11 +2,13 @@
 <html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>好時光咖啡Coffee Time</title>
     <link rel="stylesheet" href="./css/menu.css">
 </head>
 <body class="body_area" id="body">
-    <a href="#body"><button type="button" class="go_top">TOP<br>&uarr;</button></a>
+    <a href="#body"><button type="button" class="go_top" id="go_top">TOP<br>&uarr;</button></a>
     <header class="header">
         <div class="header_all">
             <div class="header_left">
@@ -84,61 +86,69 @@
         <div class="pagetitle">
             <h2 class="pagetitle">MENU</h2>
         </div>
-        <div class="menuoption">
-            <div class="option_item">
-                <a href="#coffee">咖啡、茶、果汁</a>
+
+        <!-- 頁籤 -->
+        <div class="menu_main">
+            <div class="menu_tab">
+                <ul class="option_item">
+                    <li><a href="#" data-target="tab_coffee" class="tab -on">咖啡、茶、果汁</a></li>
+                    <li><a href="#" data-target="tab_pancake" class="tab">鬆餅</a></li>
+                    <li><a href="#" data-target="tab_wine" class="tab">調酒</a></li>
+                </ul>
             </div>
-            <div class="option_item">
-                <a href="#pancake">鬆餅</a>
+            <div class="menucontent">
+                <div class="tab tab_coffee -on">
+                    <div class="coffee">
+                        <!-- <p class="listtitle">咖啡、茶、果汁</p> -->
+                        <div class="listarea">
+                            <div class="mlist"><img src="./img/menu/singleorigincoffee.png" class="menuimg"><p class="menutext">單品手沖</p></div>
+                            <div class="mlist"><img src="./img/menu/black.png" class="menuimg"><p class="menutext">美式</p></div>
+                            <div class="mlist"><img src="./img/menu/latte.png" class="menuimg"><p class="menutext">拿鐵</p></div>
+                            <div class="mlist"><img src="./img/menu/mocha.png" class="menuimg"><p class="menutext">摩卡</p></div>
+                            <div class="mlist"><img src="./img/menu/cappuccino.png" class="menuimg"><p class="menutext">卡布奇諾</p></div>
+                            <div class="mlist"><img src="./img/menu/caramelmacchiato.png" class="menuimg"><p class="menutext">焦糖瑪奇朵</p></div>
+                            <div class="mlist"><img src="./img/menu/blacktea.png" class="menuimg"><p class="menutext">錫蘭紅茶</p></div>
+                            <div class="mlist"><img src="./img/menu/greentea.png" class="menuimg"><p class="menutext">靜岡綠茶</p></div>
+                            <div class="mlist"><img src="./img/menu/milktea.png" class="menuimg"><p class="menutext">奶茶</p></div>
+                            <div class="mlist"><img src="./img/menu/juice.png" class="menuimg"><p class="menutext">綜合果汁</p></div>
+                            <section id="pancake"></section>
+                        </div>
+                    </div>
+                  </div>
+                  
+                  <div class="tab tab_pancake">
+                    <div class="pancake">
+                        <!-- <p class="listtitle" >鬆餅</p> -->
+                        <div class="listarea">
+                            <div class="mlist"><img src="./img/menu/or.png" class="menuimg"><p class="menutext">經典原味</p></div>
+                            <div class="mlist"><img src="./img/menu/blueberry.png" class="menuimg"><p class="menutext">原味藍莓</p></div>
+                            <div class="mlist"><img src="./img/menu/greenteaberry.png" class="menuimg"><p class="menutext">藍莓抹茶</p></div>
+                            <div class="mlist"><img src="./img/menu/bananaberry.png" class="menuimg"><p class="menutext">香蕉藍莓</p></div>
+                            <div class="mlist"><img src="./img/menu/honey.png" class="menuimg"><p class="menutext">蜂蜜核桃</p></div>
+                            <div class="mlist"><img src="./img/menu/strawberry.png" class="menuimg"><p class="menutext">草莓(期間限定)</p></div>
+                            <section id="wine"></section>
+                        </div>
+                        
+                    </div>
+                  </div>
+                  
+                  <div class="tab tab_wine">
+                    <div class="wine">
+                        <!-- <p class="listtitle" >調酒</p> -->
+                        <div class="listarea">
+                            <div class="mlist"><img src="./img/menu/blackrussian.png" class="menuimg"><p class="menutext">黑色俄羅斯</p></div>
+                            <div class="mlist"><img src="./img/menu/whiterussian.png" class="menuimg"><p class="menutext">白色俄羅斯</p></div>
+                            <div class="mlist"><img src="./img/menu/espressomartini.png" class="menuimg"><p class="menutext">濃縮馬丁尼</p></div>
+                            <div class="mlist"><img src="./img/menu/irishcoffee.png" class="menuimg"><p class="menutext">愛爾蘭咖啡</p></div>
+                            <div class="mlist"><img src="./img/menu/cocktail.png" class="menuimg"><p class="menutext">冷萃雞尾酒</p></div>
+                            <div class="mlist"><img src="./img/menu/margaret.png" class="menuimg"><p class="menutext">瑪格麗特</p></div>
+                            <div class="mlist"><img src="./img/menu/longisland.png" class="menuimg"><p class="menutext">長島冰茶</p></div>
+                            <div class="mlist"><img src="./img/menu/pomegranategingerpaloma.png" class="menuimg"><p class="menutext">石榴姜花酒</p></div>
+                        </div>
+                    </div>
+                  </div>
             </div>
-            <div class="option_item">
-                <a href="#wine">調酒</a>
-            </div>
-        </div>
-        <div class="menucontent">
-            <div class="coffee">
-                <p class="listtitle">咖啡、茶、果汁</p>
-                <div class="listarea">
-                    <div class="mlist"><img src="./img/menu/singleorigincoffee.png" class="menuimg"><p>單品手沖</p></div>
-                    <div class="mlist"><img src="./img/menu/black.png" class="menuimg"><p>美式</p></div>
-                    <div class="mlist"><img src="./img/menu/latte.png" class="menuimg"><p>拿鐵</p></div>
-                    <div class="mlist"><img src="./img/menu/mocha.png" class="menuimg"><p>摩卡</p></div>
-                    <div class="mlist"><img src="./img/menu/cappuccino.png" class="menuimg"><p>卡布奇諾</p></div>
-                    <div class="mlist"><img src="./img/menu/caramelmacchiato.png" class="menuimg"><p>焦糖瑪奇朵</p></div>
-                    <div class="mlist"><img src="./img/menu/blacktea.png" class="menuimg"><p>錫蘭紅茶</p></div>
-                    <div class="mlist"><img src="./img/menu/greentea.png" class="menuimg"><p>靜岡綠茶</p></div>
-                    <div class="mlist"><img src="./img/menu/milktea.png" class="menuimg"><p>奶茶</p></div>
-                    <div class="mlist"><img src="./img/menu/juice.png" class="menuimg"><p>綜合果汁</p></div>
-                    <section id="pancake"></section>
-                </div>
-            </div>
-            <div class="pancake">
-                <p class="listtitle" >鬆餅</p>
-                <div class="listarea">
-                    <div class="mlist"><img src="./img/menu/or.png" class="menuimg"><p>經典原味</p></div>
-                    <div class="mlist"><img src="./img/menu/blueberry.png" class="menuimg"><p>原味藍莓</p></div>
-                    <div class="mlist"><img src="./img/menu/greenteaberry.png" class="menuimg"><p>藍莓抹茶</p></div>
-                    <div class="mlist"><img src="./img/menu/bananaberry.png" class="menuimg"><p>香蕉藍莓</p></div>
-                    <div class="mlist"><img src="./img/menu/honey.png" class="menuimg"><p>蜂蜜核桃</p></div>
-                    <div class="mlist"><img src="./img/menu/strawberry.png" class="menuimg"><p>草莓(期間限定)</p></div>
-                    <section id="wine"></section>
-                </div>
-                
-            </div>
-            <div class="wine">
-                <p class="listtitle" >調酒</p>
-                <div class="listarea">
-                    <div class="mlist"><img src="./img/menu/blackrussian.png" class="menuimg"><p>黑色俄羅斯</p></div>
-                    <div class="mlist"><img src="./img/menu/whiterussian.png" class="menuimg"><p>白色俄羅斯</p></div>
-                    <div class="mlist"><img src="./img/menu/espressomartini.png" class="menuimg"><p>濃縮馬丁尼</p></div>
-                    <div class="mlist"><img src="./img/menu/irishcoffee.png" class="menuimg"><p>愛爾蘭咖啡</p></div>
-                    <div class="mlist"><img src="./img/menu/cocktail.png" class="menuimg"><p>冷萃雞尾酒</p></div>
-                    <div class="mlist"><img src="./img/menu/margaret.png" class="menuimg"><p>瑪格麗特</p></div>
-                    <div class="mlist"><img src="./img/menu/longisland.png" class="menuimg"><p>長島冰茶</p></div>
-                    <div class="mlist"><img src="./img/menu/pomegranategingerpaloma.png" class="menuimg"><p>石榴姜花酒</p></div>
-                </div>
-            </div>
-        </div>
+        </div>    
     </div>
 
     <footer class="footer">
@@ -181,22 +191,7 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function(){
-        
-        var hamburger_icon = document.getElementsByClassName("hamburger_icon")[0];
-        var header_list = document.getElementsByClassName("rwd-header")[0];
-        hamburger_icon.addEventListener("click", function(){
-            if( hamburger_icon.classList.contains("-on") ){
-            hamburger_icon.classList.remove("-on");
-            header_list.classList.remove("-on");
-            }else{
-            hamburger_icon.classList.add("-on");
-            header_list.classList.add("-on");
-            }
-        });
-        
-        });
-    </script>
+    <script src="./js/header.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>

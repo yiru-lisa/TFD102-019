@@ -14,12 +14,12 @@ body.body_area{
     margin: 0;
 }
 
-div.coffeearea{
-    /* border: 1px solid red; */
-    width: 900px;
-    margin: 0 auto;
-    padding-bottom: 15px;
-    font-size: 0px;
+h2.pagetitle{
+    font-size: 24px;
+    margin-left: 20px;
+    text-decoration: underline #FFA6A6; 
+    font-weight: blod;
+    margin-bottom: 15px;
 }
 
 h2.pagetitle{
@@ -27,6 +27,7 @@ h2.pagetitle{
     margin-left: 20px;
     text-decoration: underline #FFA6A6; 
     font-weight: normal;
+    margin-bottom: 15px;
 }
 
 div.all{

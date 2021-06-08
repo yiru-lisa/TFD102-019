@@ -31,6 +31,7 @@ button.go_top{
     outline: none;
     cursor: pointer;
     font-size: 12px;
+    order: 1;
 }
 button.go_top:hover{
     background-color: #e05648;
@@ -40,15 +41,20 @@ button.go_top:hover{
 
 /* ===MENU區=== */
 div.menuarea{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 70%;
     margin: 0 auto;
     padding-bottom: 15px;
     font-size: 0px;
 }
+@media (max-width: 767px){
+    div.menuarea{
+        width: 100%;
+    }
+}
 
 div.pagetitle{
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
     font-size: 0;
     width: 50%;
 }
@@ -57,96 +63,160 @@ h2.pagetitle{
     font-size: 24px;
     margin-left: 20px;
     text-decoration: underline #FFA6A6; 
-    font-weight: normal;
+    font-weight: blod;
+    margin-bottom: 15px;
 }
 
-div.pagetitle , div.menuoption{
+
+
+/* 頁籤區 */
+div.menu_main{
+    /* border: 1px solid blue; */    
+}
+
+div.menu_main div.menu_tab{
+    /* width: 100%; */
+    /* border: 1px solid yellow; */
+    padding-right: 10px;
+    
+    /* width: 100%; */
+    background-color: none;
+    
+}
+
+/* 頁籤按鈕 */
+div.menu_main div.menu_tab ul.option_item{
+    /* border: 1px solid red; */
+    list-style: none;
+    padding: 0;
+}
+div.menu_main div.menu_tab ul.option_item li{
     display: inline-block;
-    vertical-align: bottom;
 }
 
-div.menuoption{
-    border: 1px solid green;
-    font-size: 0;
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    margin: 0;
-
-}
-
-div.option_item{
-    border: 1px solid salmon;
-    /* border-bottom: 2px solid #C6CDBD; */
-    display: inline-block;
-    font-size: 0;
-    background-color: white;
-}
-
-div.option_item > a{
-    color: black;
-    font-size: 16px;
+div.menu_main div.menu_tab ul.option_item li > a{
     text-decoration: none;
-    text-align: center;
-    padding: 10px;
+    display: inline-block;
+    border: 1px solid #C6CDBD;
+    /* border-bottom: 1px solid black; */
+    padding: 2px 20px;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+    color: #C6CDBD;
+    background-color: white;
+
+    position: relative;
+    top: 1px;
+    font-size: 1rem;
 }
 
-div.option_item > a:hover{
-    font-weight: bold;
+div.menu_main div.menu_tab ul.option_item li > a::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 2px);
+    height: 1px;
+    /* background-color: #FFA6A6; */
+    bottom:-1px;
+    left: -1px;
+    z-index: 1;
 }
 
-div.option_item > a :visited{
+/* 設定開起中的頁籤 */
+div.menu_main div.menu_tab ul.option_item li > a.-on{
+    border: 1px solid #FFA6A6;
+    border-bottom: 1px solid white;
     color: black;
-}
-
-div.menucontent{
-    width: 100%;
-    border: 1px solid yellow;
-}
-
-p.listtitle{
-    font-size: 18px;
-    text-decoration: underline #C6CDBD;
-    margin-bottom: 5px;
-    margin-left: 20px;
     font-weight: bold;
+    text-decoration: underline #FFA6A6 ;
+    /* background-color: #FFA6A6; */
+}
+
+div.menu_main div.menu_tab ul.option_item li > a.-on::after{
+    background-color: white;
+    width: 100%;
+    left: 0;
+}
+
+/* 內容區塊*/
+div.menu_main div.menucontent{
+    /* border: 1px solid black; */
+    /* background-color: white; */
+}
+
+div.menu_main div.menucontent div.tab{
+    
+    display: none;
+    font-size: 0.875rem;
+}
+
+/* 開啟中頁籤對應MENU內容*/
+div.menu_main div.menucontent div.tab.-on{
+    display: block;
+}
+
+/* MENU內容標題 */
+p.listtitle{
+    font-size: 1.1rem;
+    /* text-decoration: underline #C6CDBD; */
+    margin-bottom: 5px;
+    /* margin-left: 20px; */
+    font-weight: bold;
+}
+@media (max-width: 767px){
+    p.listtitle{
+        font-size: 0.875rem;
+    }
 }
 
 div.coffee{
-    border: 1px solid blue;
-
+    /* border: 1px solid blue; */
     background-color: white;
-    padding: 10px 10px 20px 10px;
+    padding: 20px;
 }
 
-
 div.pancake{
-    border: 2px solid white;
-    padding: 10px 10px 20px 10px;
+    /* border: 1px solid blue; */
+    padding: 20px;
+    background-color: white;
 }
 
 div.wine{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     margin-bottom: 30px;
     background-color: white;
-    padding: 10px 10px 30px 10px;
+    padding: 20px;
 }
 
 div.listarea{
     margin: 0 auto;
-    width: min-content;
-    display: grid;
-    grid-template-columns: auto auto auto auto ;
-    grid-template-rows: auto auto;
-    gap: 15px;
-    border: 1px solid tomato;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid tomato; */
 }
 
 div.mlist{
-    border: 1px solid purple;
-    width: max-content;
+    /* border: 1px solid purple; */
+    width: calc( (100% - 30px) / 4 );
     border-radius: 5px;
+    /* display: flex;
+    flex-direction: column; */
+    margin-bottom: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+@media (max-width: 767px){
+    div.mlist{
+        width: calc( (100% - 10px) / 2 );
+    }
+}
+
+div.mlist:nth-child(4n){
+    margin-right: 0;
+}
+@media (max-width: 767px){
+    div.mlist:nth-child(2n){
+        margin-right: 0;
 }
 
 div.mlist:hover{
@@ -155,15 +225,11 @@ div.mlist:hover{
 }
 
 div.mlist > img.menuimg{
-    width: 200px;
-    height: 150px;
-
+    width: 100%;
 }
 
-div.mlist > p{
-    font-size: 14px;
+div.mlist > p.menutext{
+    font-size: 0.875rem;
     margin: 0;
-    text-align: center;
-
 }
 

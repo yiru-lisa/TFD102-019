@@ -31,8 +31,10 @@ h2.pagetitle{
     font-size: 24px;
     margin-left: 20px;
     text-decoration: underline #FFA6A6; 
-    font-weight: normal;
+    font-weight: blod;
+    margin-bottom: 15px;
 }
+
 
 div.bookingmessage{
     /* border: 1px solid blue; */

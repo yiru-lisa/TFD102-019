@@ -16,10 +16,15 @@ body.body_area{
 
 div.contactarea{
     /* border: 1px solid red; */
-    width: 900px;
+    width: 70%;
     margin: 0 auto;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     font-size: 0px;
+}
+@media (max-width: 767px){
+    div.contactarea{
+        width: 100%;
+    }
 }
 
 h2.pagetitle{
@@ -29,45 +34,89 @@ h2.pagetitle{
     font-weight: normal;
 }
 
-div.mapinfospace{
-    /* border: 1px solid black; */
-    width: 800px;
-    height: 280px;
-    margin: 0 auto;
-    font-size: 0px;
-    padding-bottom: 30px;
+div.main{
+    width: 100%;
+    /* border: 1px solid brown; */
+    padding: 30px 0px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-div.map , div.info{
-    display: inline-block;
-    vertical-align: top;
+div.mapinfospace{
+    /* border: 1px solid orange; */
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    font-size: 0px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+@media (max-width: 767px){
+    div.mapinfospace{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 div.map{
     /* border: 1px solid blue; */
-    width: 500px;
-    
+    width: 65%;
+    height: 100%;
+    overflow: hidden;
+    padding-top: 15px;
+}
+@media (max-width: 965px) and (min-width: 768px){
+    div.map{
+        width: 60%;
+    }
+}
+@media (max-width: 767px){
+    div.map{
+        width: 90%;
+        padding-top: 0px;
+        margin: 0 auto;
+    }
 }
 
 div.map iframe{
-    width: 520px;
-    height: 250px;
-    border: 1px solid #FCE7DD;
-    border-radius: 5px;
+    width: 100%;
+    height: 300px;
+    border: 0;
 }
 
 div.info{
     /* border: 1px solid green; */
-    width: calc( 100% - 500px - 55px);
-    height: 250px;
-    margin-left: 45px;
+    width: 35%;
+    height: 315px;
+    margin-left: 20px;
+    padding-top: 30px;
     font-size: 0px;
-    border-radius: 5px;
-    background-color: white;
+    background-image: url(../img/contact/message_memo_.png);
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: center top;
+}
+@media (max-width: 965px) and (min-width: 768px){
+    div.info{
+        width: 40%;
+        margin-left: 10px;
+    }
+}
+@media (max-width: 767px){
+    div.info{
+        width: 100%;
+        background-size: 90%;
+        margin-left: 0px;
+        margin-top: 10px;
+        padding-top: 45px;
+    }
 }
 
 div.info > p{
-    font-size: 14px;
+    font-size: 0.8rem;
     color: black;
     text-align: left;
     padding-left: 10px;
@@ -78,7 +127,7 @@ div.info > p{
 }
 
 div.info > p:first-child{
-    margin-top: 8px;
+    margin-top: 13px;
     margin-bottom: 5px;
 }
 
@@ -129,7 +178,7 @@ button.bookingbtn > a{
 
 button.bookingbtn > a:hover{
     cursor: pointer;
-    background-color: #E05648;
+    /* background-color: #E05648; */
     color: #FFF;
     font-weight: bold;
 }
@@ -140,13 +189,15 @@ button.bookingbtn > a:visited{
     color: #FFF;
 }
 
+
+/* ===留言區=== */
 div.leaveamessage{
     background-color: white;
-    /* border: 1px solid purple; */
-    width: 800px;
-    margin: 0 auto;
+    border: 2px solid #FFA6A6;
+    width: 90%;
     padding: 20px;
     font-size: 16px;
+    margin: 0 auto;
 }
 
 h3{
@@ -164,6 +215,14 @@ form.message label{
 
 textarea {
     margin-left: 50px;
+    width: 80%;
+}
+
+div.btn_block{
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 button.clean{
@@ -175,7 +234,7 @@ button.clean{
     font-size: 12px;
     transition: all .1s linear;
     width: 100px;
-    margin-left: 350px;
+    
 }
 
 button.clean a{
@@ -187,7 +246,6 @@ button.clean a{
 
 button.clean a:hover{
     color: white;
-    font-weight: bold;
 }
 
 button.clean:hover{
@@ -195,7 +253,6 @@ button.clean:hover{
     background-color: #C6CDBD;
     color: white;
     font-weight: bold;
-    
 }
 
 button.clean a:visited{
@@ -214,6 +271,7 @@ button.submit{
     font-size: 12px;
     transition: all .1s linear;
     width: 100px;
+    margin-left: 5px;
 }
 
 button.submit a{
@@ -225,7 +283,6 @@ button.submit a{
 
 button.submit a:hover{
     color: white;
-    font-weight: bold;
 }
 
 button.submit:hover{

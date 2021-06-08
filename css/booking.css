@@ -16,10 +16,15 @@ body.body_area{
 
 div.bookingarea{
     /* border: 1px solid red; */
-    width: 900px;
+    width: 70%;
     margin: 0 auto;
     padding-bottom: 50px;
     font-size: 0px;
+}
+@media (max-width: 767px){
+    div.bookingarea{
+        width: 100%;
+    }
 }
 
 h2.pagetitle{
@@ -31,27 +36,46 @@ h2.pagetitle{
 
 div.bookingmessage{
     /* border: 1px solid blue; */
-    width: 800px;
-    margin: 0 auto;
+    width: 100%;
     background-color: white;
     padding: 30px 0px 10px 0px;
 }
 
 div.bookingmessage form{
-    font-size: 14px;
+    font-size: 1rem;
     margin-left: 40px;
 }
+/* @media (max-width: 767px){
+    div.bookingmessage form{
+        margin: 0 auto;
+    }
+} */
 
 form.message label{
     margin-left: 20px;
-    padding-bottom: 20px;
-    text-align: top;
+    padding-bottom: 10px;
+    vertical-align: baseline;
+    width: 100%;
 }
+form.message > label.reason{
+    margin-left: 5px;
+}
+
+label textarea{
+    width: 50%;
+}
+@media (max-width: 767px){
+    label textarea{
+        width: 80%;
+    }
+}
+
 
 div.btn_block{
     /* border: 1px solid red; */
-    width: fit-content;
-    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 button.clean{
@@ -82,7 +106,6 @@ button.clean:hover{
     background-color: #C6CDBD;
     color: white;
     font-weight: bold;
-    
 }
 
 button.clean a:visited{
@@ -131,30 +154,57 @@ button.submit a:visited{
 
 div.bookinginfo{
     /* border: 1px solid green; */
-    width: 800px;
+    width: 100%;
     margin: 0 auto;
     padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+@media (max-width: 900px){
+    div.bookinginfo{
+        flex-direction: column;
+    }
 }
 
 div.bkinfo_left{
     /* border: 1px solid #E05648; */
-    width: 400px;
-    height: 250px;
+    width: 55%;
     padding: 10px 20px 10px 15px;
     background:white;
+}
+@media (max-width: 900px){
+    div.bkinfo_left{
+        width: 100%;
+    }
+}
+
+/* ===注意事項的三角形符號(左)=== */
+div.bkinfo_left > span{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 10px solid #e05648;
+    border-right: 0px solid transparent;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    margin-right: 5px;
 }
 
 div.bkinfo_left > h3 {
     font-size: 18px;
-    padding-left: 10px;
-    text-decoration: underline #ffa6a6;
-    margin: 0px 0px 10px 0px 
-
+    padding:0px 5px;
+    /* text-decoration: underline #ffa6a6; */
+    margin: 0;
+}
+div.bkinfo_left > span, div.bkinfo_left > h3 {
+    display: inline-block;
 }
 
 div.bkinfo_left ul{
     padding-left: 30px;
     font-size: 14px;
+    list-style: decimal;
 }
 
 div.bkinfo_left ul > li{
@@ -162,15 +212,34 @@ div.bkinfo_left ul > li{
 }
 
 div.bkinfo_right{
-    /* border: 1px solid orange; */
-    width: calc( 100% - 400px );
-    height: 250px;
+    /* border: 1px solid blue; */
+    width: 45%;
+    overflow: hidden;
+}
+@media (max-width: 900px){
+    div.bkinfo_right{
+        width: 100%;
+        height: 250px;
+        position: relative;
+    }
 }
 
 div.bkinfo_right img{
-    width: 400px;
-    height: 250px;
-
+    /* width: 100%; */
+    
+}
+@media (max-width: 1247px) and (min-width: 901px){
+    div.bkinfo_right img{
+        height: 100%;
+    }
+}
+@media (max-width: 900px){
+    div.bkinfo_right img{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
 }
 
 div.bkinfo_left , div.bkinfo_right{

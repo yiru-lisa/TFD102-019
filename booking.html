@@ -2,6 +2,8 @@
 <html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>好時光咖啡Coffee Time</title>
     <link rel="stylesheet" href="./css/booking.css">
 </head>
@@ -77,8 +79,11 @@
     <div class="banner">
         <img src="./img/banner/banner_booking.png" alt="banner" >
     </div>
+
     <div class="bookingarea">
         <h2 class="pagetitle">線上訂位</h2>
+        
+        <!-- 線上訂位填表區 -->
         <div class="bookingmessage">
             <form class="message">
                 <label name="name">姓名：
@@ -114,21 +119,23 @@
                 </label>
                 <br><br>
                 <label>訂位目的：</label>
-                <label name="orderreason">
-                    <input type="radio" name="orderresaon" value="約會">約會
+                <label class="reason" name="orderreason">
+                    <input type="radio" name="orderreason" value="約會">約會
                 </label>
-                <label name="orderresaon">
-                    <input type="radio" name="orderresaon" value="朋友聚餐">朋友聚餐
+                <label class="reason" name="orderreason">
+                    <input type="radio" name="orderreason" value="朋友聚餐">朋友聚餐
                 </label>
-                <label name="orderresaon">
-                    <input type="radio" name="orderresaon" value="慶生">慶生
+                <label class="reason" name="orderreason">
+                    <input type="radio" name="orderreason" value="慶生">慶生
                 </label>
-                <label name="orderresaon">
-                    <input type="radio" name="orderresaon" value="商務會議">商務會議
+                <label class="reason" name="orderreason">
+                    <input type="radio" name="orderreason" value="商務會議">商務會議
                 </label>
                 <br><br>
-                <label name="notes">其他備註：
-                <textarea name="notes" rows="5" cols="55"></textarea>
+                <label>其他備註：</label>
+                <br>
+                <label name="notes">
+                    <textarea name="notes" rows="5" cols="55"></textarea>
                 </label>
                 <br><br>        
                 <div class="btn_block">
@@ -141,9 +148,11 @@
                 </div>
             </form>
         </div>
+
+        <!-- 下方圖片&注意事項 -->
         <div class="bookinginfo">
             <div class="bkinfo_left">
-                <h3>訂位注意事項</h3>
+                <span ></span><h3>訂位注意事項</h3>
                 <ul>
                     <li>營業時間為08:00am-22:00pm<br>開放訂位時間為10:00am-20:00pm</li>
                     <li>預先訂位用餐時間為2小時</li>

@@ -31,21 +31,26 @@ button.go_top{
     outline: none;
     cursor: pointer;
     font-size: 12px;
-    
+}
+button.go_top:hover{
+    background-color: #e05648;
+    font-weight: bold;
 }
 
+
+/* ===MENU區=== */
 div.menuarea{
-    /* border: 1px solid red; */
-    width: 900px;
+    border: 1px solid red;
+    width: 70%;
     margin: 0 auto;
     padding-bottom: 15px;
     font-size: 0px;
 }
 
 div.pagetitle{
-    /* border: 1px solid orange; */
-    width: 250px;
+    border: 1px solid orange;
     font-size: 0;
+    width: 50%;
 }
 
 h2.pagetitle{
@@ -57,21 +62,26 @@ h2.pagetitle{
 
 div.pagetitle , div.menuoption{
     display: inline-block;
+    vertical-align: bottom;
 }
 
 div.menuoption{
-    /* border: 1px solid green; */
+    border: 1px solid green;
     font-size: 0;
-    padding: 10px;
-    margin-left: 300px;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin: 0;
+
 }
 
 div.option_item{
-    border-bottom: 2px solid #C6CDBD;
+    border: 1px solid salmon;
+    /* border-bottom: 2px solid #C6CDBD; */
     display: inline-block;
     font-size: 0;
-    width: auto;
-    margin-left: 25px;
+    background-color: white;
 }
 
 div.option_item > a{
@@ -80,7 +90,6 @@ div.option_item > a{
     text-decoration: none;
     text-align: center;
     padding: 10px;
-    vertical-align: baseline;
 }
 
 div.option_item > a:hover{
@@ -93,7 +102,7 @@ div.option_item > a :visited{
 
 div.menucontent{
     width: 100%;
-    /* border: 1px solid yellow; */
+    border: 1px solid yellow;
 }
 
 p.listtitle{
@@ -105,7 +114,7 @@ p.listtitle{
 }
 
 div.coffee{
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
 
     background-color: white;
     padding: 10px 10px 20px 10px;
@@ -118,7 +127,7 @@ div.pancake{
 }
 
 div.wine{
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
     margin-bottom: 30px;
     background-color: white;
     padding: 10px 10px 30px 10px;
@@ -131,11 +140,11 @@ div.listarea{
     grid-template-columns: auto auto auto auto ;
     grid-template-rows: auto auto;
     gap: 15px;
-    /* border: 1px solid tomato; */
+    border: 1px solid tomato;
 }
 
 div.mlist{
-    /* border: 1px solid purple; */
+    border: 1px solid purple;
     width: max-content;
     border-radius: 5px;
 }

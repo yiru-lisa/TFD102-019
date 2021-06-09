@@ -54,9 +54,21 @@ div.contactarea{
 h2.pagetitle{
     font-size: 24px;
     margin-left: 20px;
-    text-decoration: underline #FFA6A6; 
+    /* text-decoration: underline #FFA6A6;  */
     font-weight: bold;
     margin-bottom: 15px;
+}
+/* ===三角形符號(左)=== */
+h2.pagetitle > span{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 10px solid #e05648;
+    border-right: 10px solid transparent;
+    border-top: 0px solid transparent;
+    border-bottom: 10px solid transparent;
+    margin-right: 5px;
+    transform: translateX(10px);
 }
 
 div.main{
@@ -119,7 +131,7 @@ div.info{
     margin-left: 20px;
     padding-top: 30px;
     font-size: 0px;
-    background-image: url(../img/contact/message_memo_.png);
+    background-image: url(../img/contact/bg_1.jpg);
     background-repeat: no-repeat;
     background-size: 120%;
     background-position: center top;
@@ -199,6 +211,7 @@ button.bookingbtn > a{
     color: white;
     padding: 5px 12px;
     border-radius: 5px;
+    text-decoration: none;
 }
 
 button.bookingbtn > a:hover{
@@ -223,7 +236,7 @@ div.leaveamessage{
     padding: 20px;
     font-size: 16px;
     margin: 0 auto;
-}
+    
 
 h3{
     margin-left: 50px;
@@ -238,7 +251,7 @@ form.message label{
     vertical-align: top;
 }
 
-textarea {
+label >textarea {
     margin-left: 50px;
     width: 80%;
 }
@@ -304,6 +317,7 @@ button.submit a{
     padding: 5px 25px;
     border-radius: .25rem;
     font-size: 12px;
+    text-decoration: none;
 }
 
 button.submit a:hover{

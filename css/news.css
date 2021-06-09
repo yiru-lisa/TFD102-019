@@ -56,9 +56,22 @@ div.newsarea{
 h2.pagetitle{
     font-size: 24px;
     margin-left: 20px;
-    text-decoration: underline #FFA6A6; 
+    /* text-decoration: underline #FFA6A6;  */
     font-weight: blod;
     margin-bottom: 15px;
+}
+
+/* ===三角形符號(左)=== */
+h2.pagetitle > span{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 10px solid #e05648;
+    border-right: 10px solid transparent;
+    border-top: 0px solid transparent;
+    border-bottom: 10px solid transparent;
+    margin-right: 5px;
+    transform: translateX(10px);
 }
 
 div.news_list{
@@ -127,7 +140,7 @@ div.news_item p.newstitle{
     margin: 0;
     padding: 5px;
     font-weight: bold;
-    text-decoration: underline #FFA6A6;
+    text-decoration: underline #e05648;
 }
 
 div.news_item p.newsdate{
@@ -194,6 +207,7 @@ ul.news_list li div.news_btn_block button.newsbtn > a{
     width: 45px;
     height: fit-content;
     padding: 3px 0px;
+    text-decoration: none;
     
     /* text-decoration: underline; */
 }

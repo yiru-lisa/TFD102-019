@@ -104,7 +104,7 @@ div.menuitem{
 }
 
 div.menuitem:hover{
-    transform: translateY(-5%);
+    transform: translateY(-2%);
     transition: transform 0.5s;
 }
 
@@ -201,24 +201,49 @@ div.newsarea_right{
     }
 }
 
+/* ===三角形符號(左)=== */
+div.newsarea_right > span{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 10px solid #e05648;
+    border-right: 0px solid transparent;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    margin-right: 5px;
+}
+
+/* ===三角形符號(左)=== */
+div.newsarea_right p.newstitle > span{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 10px solid #e05648;
+    border-right: 0px solid transparent;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    margin-right: 5px;
+    transform: translateX(4px);
+}
+
 div.newsarea_right > p.newstitle{
     font-size: 16px;
     text-align: center;
     margin: 20px 0px;
-    text-decoration: underline #FFA6A6; 
+    /* text-decoration: underline #FFA6A6;  */
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
+
+
 div.newsarea_right > p.newslist{
     font-size: 12px;
     /* border-bottom: 1px solid #c6cdbd; */
     padding-left: 10px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+
     
 }
 
@@ -277,11 +302,23 @@ div.aboutarea_left{
     }
 }
 
+/* ===三角形符號(左)=== */
+div.aboutarea_left p.abouttitle > span{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 10px solid #e05648;
+    border-right: 0px solid transparent;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    margin-right: 5px;
+    transform: translateX(4px);
+}
 p.abouttitle{
     font-size: 16px;
     text-align: center;
     margin: 0;
-    text-decoration: underline #FFA6A6; 
+    /* text-decoration: underline #FFA6A6;  */
 }
 
 p.aboutcontent{

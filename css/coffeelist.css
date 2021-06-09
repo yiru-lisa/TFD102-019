@@ -26,13 +26,14 @@ button.go_top{
     color: white;
     background-color: #FFA6A6;
     border-radius: 10px;
-    font-size: 20px;
     line-height: 1;
     outline: none;
     cursor: pointer;
-    font-size: 12px;
+    font-size: 0.75rem;
     order: 1;
+    vertical-align: center;
 }
+
 button.go_top:hover{
     background-color: #e05648;
     font-weight: bold;

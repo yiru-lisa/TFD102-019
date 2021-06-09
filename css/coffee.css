@@ -80,12 +80,10 @@ div.coffee_all{
     background-color: white;
     padding-top: 30px;
     display: flex;
-    margin-bottom: 70px;
 }
 @media (max-width: 767px){
     div.coffee_all{
         width: 100%;
-        margin-bottom: 50px;
     }
 }
 
@@ -487,17 +485,33 @@ button.buynow a:visited{
 }
 
 /* ===商品敘述=== */
+div.contentandrecommend{
+    /* border: 1px solid violet; */
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    background-color: white;
+    padding: 0px 15px;
+}
+@media (max-width: 767px){
+    div.contentandrecommend{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}
+
 div.product_content{
     border-top: 2px solid #C6CDBD;
     width: 100%;
-    padding: 15px;
-    margin-bottom: 20px;
+    padding: 5px 15px 70px 15px;
+    margin: 0 auto;
 }
 
 div.product_content > p.content{
     font-size: 0.75rem;
     color: black;
     line-height: 1.8;
+    margin-top: 10px;
 }
 
 /* ===可能也喜歡推薦=== */
@@ -510,12 +524,13 @@ span.h3{
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
     margin-right: 5px;
+    margin-left: 10px;
 }
 
 h3.recommend{
     font-size: 1.1rem;
-    width: 90%;
-    margin: 0;
+    width: 70%;
+    margin: 0 auto;
     padding-bottom: 5px;
     /* text-decoration: underline #FFA6A6;  */
     font-weight: normal; 
@@ -531,11 +546,17 @@ span.h3,h3.recommend{
 }
 
 div.recommend{
-    border: 2px solid #ffa6a6;
+    /* border: 2px solid #ffa6a6; */
     display: flex;
     justify-content: left;
     width: 100%;
-    padding: 20px 8px;
+    padding: 10px 8px;
+    margin-bottom: 70px;
+}
+@media (max-width: 767px){
+    div.recommend{
+        margin-bottom: 50px;
+    }
 }
 
 div.recommend_p{
@@ -559,7 +580,7 @@ div.recommend_p > a{
 
 div.recommend_p:hover{
     background:#ecccb3 ;
-    transform: translateY(-10%);
+    transform: translateY(-5%);
     transition: transform 0.5s;
 
 }

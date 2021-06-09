@@ -561,9 +561,9 @@ div.recommend{
 
 div.recommend_p{
     /* border: 1px solid palevioletred; */
-    width: calc( 95% / 4 );
+    width: calc( 75% / 4 );
     font-size: 0;
-    margin-right: 10px;
+    margin-right: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
 }

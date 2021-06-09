@@ -133,7 +133,7 @@ div.info{
     margin-left: 20px;
     padding-top: 30px;
     font-size: 0px;
-    background-image: url(../img/contact/bg_1.jpg);
+    background-image: url(../img/contact/message_memo_.png);
     background-repeat: no-repeat;
     background-size: 120%;
     background-position: center top;
@@ -171,13 +171,13 @@ div.info > p:first-child{
 }
 
 div.info p > span.import{
-    font-size: 16px;
+    font-size: 1rem;
     color: #E05648;
     font-weight: bold;
 }
 
 div.info p > span.note{
-    font-size: 6px;
+    font-size: 0.5rem;
     color: #E05648;
     font-weight: bold;
 }
@@ -239,6 +239,7 @@ div.leaveamessage{
     font-size: 16px;
     margin: 0 auto;
     
+}
 
 h3{
     margin-left: 50px;
@@ -256,6 +257,13 @@ form.message label{
 label >textarea {
     margin-left: 50px;
     width: 80%;
+}
+
+div.m_btn_block{
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 div.btn_block{
@@ -319,7 +327,6 @@ button.submit a{
     padding: 5px 25px;
     border-radius: .25rem;
     font-size: 12px;
-    text-decoration: none;
 }
 
 button.submit a:hover{

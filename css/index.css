@@ -17,10 +17,30 @@ body.body_area{
     margin: 0;
 }
 
-
-img{
-    max-width: 100%;
+/* ====回到最上面按鈕==== */
+button.go_top{
+    border:none;
+    width: 40px;
+    height: 40px;
+    background: none;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    color: white;
+    background-color: #FFA6A6;
+    border-radius: 10px;
+    font-size: 20px;
+    line-height: 1;
+    outline: none;
+    cursor: pointer;
+    font-size: 12px;
+    order: 1;
 }
+button.go_top:hover{
+    background-color: #e05648;
+    font-weight: bold;
+}
+
 
 /* =====首頁底圖===== */
 div.main{
@@ -56,10 +76,9 @@ div.main-1{
 
 div.menuarea{
     /* border: 1px solid black; */
-    display: grid;
-    grid-template-columns: 160px 160px 160px 160px;
-    gap: 20px;
-    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
     margin: 0 auto;
     padding-bottom: 15px;
 }
@@ -78,8 +97,14 @@ div.menuarea{
 
 div.menuitem{
     /* border: 1px solid blue; */
-    width: 160px;
+    width: calc( (100% - 60px ) / 4 ) ;
+    /* width: 160px; */
     padding-top: 10px;
+    margin-left: 20px;
+}
+
+div.menuitem:first-child{
+    margin-left: 0px;
 }
 
 div.menuitem:nth-child(2), div.menuitem:nth-child(4){
@@ -113,11 +138,12 @@ p.menuitem_name{
 /* =====最新消息+關於好時光區===== */
 
 div.newsarea{
-    width: 700px;
+    width: 80%;
     /* border: 1px solid red; */
     margin: 0 auto;
     font-size: 0;
     display: flex;
+    justify-content: center;
 }
 @media (max-width: 767px){
     div.newsarea{
@@ -134,7 +160,8 @@ div.newsarea_left , div.newsarea_right{
 }
 
 div.newsarea_left{
-    width: 350px;
+    width: 50%;
+    font-size: 0;
 }
 @media (max-width: 767px){
     div.newsarea_left{
@@ -145,12 +172,17 @@ div.newsarea_left{
 }
 
 div.newsarea_left img{
-    width: 100%;
+    width: 350px;
+}
+@media (max-width: 767px){
+    div.newsarea_left img{
+        width: 100%;
+    }
 }
 
 
 div.newsarea_right{
-    width: 350px;
+    width: 50%;
     /* border: 1px solid black; */
     padding: 10px;
     background-color: white;
@@ -169,19 +201,29 @@ div.newsarea_right > p.newstitle{
     text-align: center;
     margin: 20px 0px;
     text-decoration: underline #FFA6A6; 
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 div.newsarea_right > p.newslist{
     font-size: 12px;
-    border-bottom: 1px solid #c6cdbd;
-    width: 270px;
-    margin: 10px 2px 5px 20px;
+    /* border-bottom: 1px solid #c6cdbd; */
+    padding-left: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
 }
 
 p.newslist > a{
     font-size: 12px;
     margin-left: 5px;
-    color: black
+    color: black;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 p.newslist > a:hover{
@@ -196,11 +238,12 @@ p.newslist > span{
 }
 
 div.aboutarea{
-    width: 700px;
+    width: 80%;
     /* border: 1px solid blue; */
     margin: 0 auto;
     font-size: 0;
     display: flex;
+    justify-content: center;
 }
 @media (max-width: 767px){
     div.aboutarea{
@@ -217,7 +260,7 @@ div.aboutarea_left , div.aboutarea_right{
 }
 
 div.aboutarea_left{
-    width: 350px;
+    width: 50%;
     /* border: 1px solid black; */
     padding: 10px;
     background-color: white;
@@ -245,18 +288,24 @@ p.aboutcontent{
 }
 
 div.aboutarea_right{
-    width: 350px;
+    width: 50%;
+    overflow:hidden;
 }
 @media (max-width: 767px){
     div.aboutarea_right{
         width: 100%;
         order: 1;
-        overflow:hidden;
+        
     }
 }
 
 div.aboutarea_right img{
-    width: 100%;  
+    width: 350px;  
+}
+@media (max-width: 767px){
+    div.aboutarea_right img{
+        width: 100%;
+    }
 }
 
 /* =====立即定位區===== */

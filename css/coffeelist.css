@@ -14,6 +14,30 @@ body.body_area{
     margin: 0;
 }
 
+/* ====回到最上面按鈕==== */
+button.go_top{
+    border:none;
+    width: 40px;
+    height: 40px;
+    background: none;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    color: white;
+    background-color: #FFA6A6;
+    border-radius: 10px;
+    font-size: 20px;
+    line-height: 1;
+    outline: none;
+    cursor: pointer;
+    font-size: 12px;
+    order: 1;
+}
+button.go_top:hover{
+    background-color: #e05648;
+    font-weight: bold;
+}
+
 div.coffeelistarea{
     /* border: 1px solid red; */
     width: 70%;
@@ -21,6 +45,14 @@ div.coffeelistarea{
     padding-bottom: 15px;
     font-size: 0px;
 }
+@media (max-width: 767px){
+    div.coffeelistarea{
+        width: 100%;
+        padding-bottom: 0px;
+    }
+}
+    
+
 
 h2.pagetitle{
     font-size: 24px;
@@ -32,83 +64,128 @@ h2.pagetitle{
 
 
 div.coffee_all{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     width: 70%;
     margin: 0 auto;
-    /* display: flex; */
-
+    background-color: white;
+    padding-top: 30px;
+    display: flex;
+    margin-bottom: 70px;
 }
-
-div.left, div.main{
-    display: inline-block;
-    vertical-align: top;
+@media (max-width: 767px){
+    div.coffee_all{
+        width: 100%;
+        margin-bottom: 50px;
+    }
 }
 
 div.left{
-    border: 1px solid green;
+    border-top: 2px solid #e05648;
     width: 20%;
-    height: fit-content;
     background-color: white;
     padding-bottom: 30px;
-    
-    
+    margin-left: 10px;
+}
+@media (max-width: 767px){
+    div.left{
+        margin-left: 0px;
+        width: 27%
+    }
 }
 
-
-div.left ul > li.item{
-    /* border-bottom: 2px solid #C6CDBD; */
-    border: 1px solid red;
-    height: fit-content;
+div.btn_block{
+    /* border-bottom: 2px solid #e05648; */
 }
 
-div.left ul li.item > a{
-    border: 1px solid black;
-    color: black;
-    font-size: 16px;
+div.allitem, div.allitem >a, button.item{
+    border: 0;
+    background-color: white;
+    font-size: 1rem;
+    padding: 5px 10px;
     width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    color: black;
     text-decoration: none;
-    padding: 5px 50px;
+}
+@media (max-width: 767px){
+    div.allitem, div.allitem >a, button.item{
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
 }
 
+div.allitem >a, button.item:hover{
+    font-weight: bold;
+}
 
-div.left ul li.item > a:hover{
+button.item.active{
+    background-color:  #e05648;
+    color: white;
     font-weight: bold;
 
 }
 
-ul > li.itemlist{
-    border: 1px solid purple;
-    margin: 0 auto;
-    width: 120px;
-    padding: 5px 20px;
+i.fa-caret-down {
+    float: right;
+  }
+
+div.allitem{
+    padding: 5px 0px;
+    border-bottom: 2px solid #e05648;
 }
 
-ul li.itemlist > a{
-    font-size: 12px;
+div.left ul.list{
+    display: none;
+}
+
+ul.list > li.itemlist{
+    /* border: 1px solid purple; */
+    margin: 0 auto;
+    width: 80%;
+    padding-left: 10px;
+}
+
+
+ul.list li.itemlist > a{
+    font-size: 0.8rem;
     margin: 0px;
     line-height: 1.6;
     color: black;
-    text-decoration: none;
-    width: 100%;
+}
+@media (max-width: 767px){
+    ul.list li.itemlist > a{
+        font-size: 0.6rem;
+    }
 }
 
-ul li.itemlist > a:hover{
+ul.list li.itemlist > a:hover{
     color: #e05648;
     font-weight: bold;
     text-decoration: underline #E05648;
 }
 
-
-ul li.itemlist > a:visited{
+ul.list li.itemlist > a:visited{
     color: black;
 }
 
+/* ===右側商品列表=== */
 div.main{
-    border: 1px solid orange;
-    width: 80%;
-    padding-left: 20px;
+    /* border: 1px solid orange; */
+    width: 75%;
+    padding-left: 10px;
+    margin-left: 20px;
+}
+@media (max-width: 767px){
+    div.main{
+        padding-left: 0px;
+        margin-left: 10px;
+        width: 70%;
+    }
 }
 
+/* ===麵包屑=== */
 div.breadcrumb{
     width: 100%;
     /* border: 1px solid rgb(39, 185, 230); */
@@ -152,48 +229,64 @@ div.breadcrumb ol.breadcrumb_list > li > a:hover{
     text-decoration: underline #E05648;
 }
 
+
 /* ===產品列表=== */
 div.productlist{
     width: 100%;
-    border: 1px solid rgb(228, 53, 135);
-    display: grid;
-    grid-template-columns: 130px 130px 130px 130px;
-    grid-template-rows: 185px 185px;
-    gap: 20px;
+    /* border: 1px solid rgb(228, 53, 135); */
+    display: flex;
+    flex-wrap: wrap;
     padding: 10px 0px;
     margin-bottom: 20px
 }
 
-div.productlist > a.product{
-    border: 1px solid black;
-    color: black;
+div.product{
+    /* border: 1px solid palevioletred; */
+    width: calc(( 100% - 30px ) / 4);
+    font-size: 0;
+    margin-right: 10px;
+    margin-bottom: 20px;
     border-radius: 5px;
+}
+@media (max-width: 767px){
+    div.product{
+        width: calc(( 100% - 10px ) / 2);
+    }
+}
+
+div.product:nth-child(4n){
+    margin-right: 0px;
+}
+@media (max-width: 767px){
+    div.product:nth-child(2n){
+        margin-right: 0px;
+    }
+}
+
+
+div.product > a{
+    color: black;
     text-decoration: none;
 }
 
-div.productlist > a.product:hover{
+div.product:hover{
     background:#ecccb3 ;
 }
 
-div.product{
-    
-    font-size: 0;
-}
+
 
 div.product_img{
-    border: 1px solid yellow;
-    
-    height: 135px;
+    /* border: 1px solid yellow; */
+    /* height: 135px; */
 
 }
 
 div.product_img > img{
     width: 100%;
-    height: 135px;
 }
 
 div.product_name{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     width: 100%;
 }
 
@@ -206,7 +299,7 @@ div.product_name > p{
 }
 
 div.product_price{
-    border: 1px solid green;
+    /* border: 1px solid green; */
     width: 100%;
     font-size: 12px;
     

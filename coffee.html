@@ -6,8 +6,11 @@
 
     <title>好時光咖啡Coffee Time</title>
     <link rel="stylesheet" href="./css/coffee.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body class="body_area">
+    <a href="#body"><button type="button" class="go_top" id="go_top">TOP<br>&uarr;</button></a>
     <header class="header">
         <div class="header_all">
             <div class="header_left">
@@ -79,49 +82,69 @@
     <div class="banner">
         <img src="./img/banner/testbanner.png" alt="banner" >
     </div>
+
     <div class="coffeearea">
         <h2 class="pagetitle">咖啡豆專區</h2>
     </div>
-    <div class="all">
+    <div class="coffee_all">
+        <!-- 左側商品選單 -->
         <div class="left">
-            <div class="item">
-                <p>全部商品</p>
+            <div class="allitem">
+                <a href="#">全部商品</a>
             </div>
-            <div class="item">
-                <p>焙度</p>
+            <div class="left_btn_block">
+                <button class="item">
+                    焙度
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <ul class="list">
+                    <li class="itemlist"><a href="#">淺焙-中淺焙</a></li>
+                    <li class="itemlist"><a href="#">中焙</a></li>
+                    <li class="itemlist"><a href="#">中深焙-深焙</a></li>
+                </ul>
             </div>
-            <ul>
-                <li class="itemlist"><a href="#">淺焙-中淺焙</a></li>
-                <li class="itemlist"><a href="#">中焙</a></li>
-                <li class="itemlist"><a href="#">中深焙-深焙</a></li>
-            </ul>
             
-            <div class="item">
-                <p>酸度</p>
-            </div>
-            <ul>
-                <li class="itemlist"><a href="#">明亮酸</a></li>
-                <li class="itemlist"><a href="#">溫和酸</a></li>
-                <li class="itemlist"><a href="#">苦甜</a></li>
-            </ul>
 
-            <div class="item">
-                <p>風味</p>
+            <div class="left_btn_block">
+                <button class="item">
+                    酸度
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <ul class="list">
+                    <li class="itemlist"><a href="#">明亮酸</a></li>
+                    <li class="itemlist"><a href="#">溫和酸</a></li>
+                    <li class="itemlist"><a href="#">苦甜</a></li>
+                </ul>
             </div>
-            <ul>
-                <li class="itemlist"><a href="#">水果香</a></li>
-                <li class="itemlist"><a href="#">木質花茶香</a></li>
-                <li class="itemlist"><a href="#">堅果香</a></li>
-            </ul>
+            
 
-            <div class="item">
-                <p>單品特調</p>
+            <div class="left_btn_block">
+                <button class="item">
+                    風味
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <ul class="list">
+                    <li class="itemlist"><a href="#">水果香</a></li>
+                    <li class="itemlist"><a href="#">木質花茶香</a></li>
+                    <li class="itemlist"><a href="#">堅果香</a></li>
+                </ul>
             </div>
-            <ul>
+            
+
+            <div class="left_btn_block">
+                <button class="item">
+                    單品特調
+                    <i class="fa fa-caret-down"></i>
+                </button>
+            <ul class="list">
                 <li class="itemlist"><a href="#">單品</a></li>
                 <li class="itemlist"><a href="#">特調</a></li>
             </ul>
+            </div>
+            
         </div>
+
+        <!-- 右側商品資訊&推薦 -->
         <div class="main">
             <div class="breadcrumb">
                 <ol class="breadcrumb_list">
@@ -138,14 +161,23 @@
                     <div class="product_info">
                         <p class="name">衣索比亞</p>
                         <p class="info">◆風味：柑橘與檸檬的豐富口感、伴隨茶香與花香的繚繞<br>◆焙度：淺烘焙<br>◆試試搭配點心：富有果香、水果裝飾的點心。水果派</p>
-                        <p class="price">NT$400元</p>
-                        <p class="weight">/250g</p>
+                        <div class="price">
+                            <p class="price">NT$400元</p>
+                            <p class="weight">/250g</p>
+                        </div>
+                        <div class="num">
+                            <p class="num">數量：</p>
+                            <label>
+                                <input id="min" name="" type="button" value="-" >
+                                <input id="num" name="num" type="text" value="1" readonly="true" onchange="setTotal();" >
+                                <input id="add" name="" type="button" value="+" >
+                            </label>
+                        </div>
+                        
                         <div class="btn_block">
                             <button type="button" class="addtocart">
                                 <a href="#">加入購物車</a>
                             </button>
-                        </div>
-                        <div class="btn_block">
                             <button type="button" class="buynow">
                                 <a href="#">直接購買</a>
                             </button>
@@ -157,15 +189,50 @@
                         衣索比亞，全球咖啡的原鄉，也是咖啡品種的基因寶庫。豐盈的茶香與花香、以及輕盈的柑橘與檸檬口感，彷如溫暖的冬陽，或是靜涼的山豁，洗滌一身的狼狽與疲憊。
                     </p>
                 </div>
-                <div class="btn_back">
-                    <button type="button" class="backtolastpage">
-                        <a href="./coffeelist.html">回到商品列表</a>
-                    </button>
+
+                <!-- 推薦可能也喜歡商品區 -->
+                <span class="h3"></span><h3 class="recommend">你可能也會喜歡...</h3>
+                <div class="recommend">
+                    <div class="recommend_p">
+                        <a href="./coffee.html" class="recommend_p">
+                            <div class="recommend_p_img">
+                                <img src="./img/coffeelist/caribbeanbreeze.png">
+                            </div>
+                            <div class="recommend_p_name">
+                                <p>加勒比微風</p>
+                            </div>
+                        </a>
+                    </div>
+     
+                    <div class="recommend_p">
+                        <a href="./coffee.html" class="recommend_p">
+                            <div class="recommend_p_img">
+                                <img src="./img/coffeelist/columbia.png">
+                            </div>
+                            <div class="recommend_p_name">
+                                <p>哥倫比亞</p>
+                            </div>
+                        </a>
+                    </div>
+       
+                    <div class="recommend_p">
+                        <a href="./coffee.html" class="recommend_p">
+                            <div class="recommend_p_img">
+                                <img src="./img/coffeelist/costarica.png">
+                            </div>
+                            <div class="recommend_p_name">
+                                <p>哥斯大黎加</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
+
             </div>
 
         </div>
     </div>
+
+
     <footer class="footer">
         <div class="all">
             <div class="footer_all">
@@ -207,5 +274,54 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./js/header.js"></script>
+    <script src="./js/gototop.js"></script>
+
+    <script>
+        // 左側選單
+        var dropdown = document.getElementsByClassName("item");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+            });
+        }
+
+        var dropdown_all = document.getElementsByClassName("allitem");
+        var i;
+
+        for (i = 0; i < dropdown_all.length; i++) {
+        dropdown_all[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            });
+        }
+
+        //商品加減按鈕
+        $(function(){ 
+            var t = $("#num"); 
+            $("#add").click(function(){		
+                t.val(parseInt(t.val())+1)
+                setTotal();
+            });
+            $("#min").click(function(){
+                if(t.val()>1){
+                t.val(parseInt(t.val())-1);
+                }
+                else{
+                alert("至少購買一件哦！");
+                }
+                setTotal();
+            })
+        });
+        
+    </script>
+
 </body>
 </html>

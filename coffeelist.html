@@ -6,8 +6,11 @@
 
     <title>好時光咖啡Coffee Time</title>
     <link rel="stylesheet" href="./css/coffeelist.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body class="body_area">
+    <a href="#body"><button type="button" class="go_top" id="go_top">TOP<br>&uarr;</button></a>
     <header class="header">
         <div class="header_all">
             <div class="header_left">
@@ -87,45 +90,59 @@
 
         <!-- 左側商品選單 -->
         <div class="left">
-            <ul>
-                <li class="item">
-                    <a href="#">全部商品</a>
-                </li>
-                <li class="item">
-                    <a href="#">焙度</a>
-                </li>
-                <ul>
+            <div class="allitem">
+                <a href="#">全部商品</a>
+            </div>
+            <div class="btn_block">
+                <button class="item">
+                    焙度
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <ul class="list">
                     <li class="itemlist"><a href="#">淺焙-中淺焙</a></li>
                     <li class="itemlist"><a href="#">中焙</a></li>
                     <li class="itemlist"><a href="#">中深焙-深焙</a></li>
                 </ul>
-                
-                <li class="item">
-                    <a href="">酸度</a>
-                </li>
-                <ul>
+            </div>
+            
+
+            <div class="btn_block">
+                <button class="item">
+                    酸度
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <ul class="list">
                     <li class="itemlist"><a href="#">明亮酸</a></li>
                     <li class="itemlist"><a href="#">溫和酸</a></li>
                     <li class="itemlist"><a href="#">苦甜</a></li>
                 </ul>
+            </div>
+            
 
-                <li class="item">
-                    <a href="">風味</a>
-                </li>
-                <ul>
+            <div class="btn_block">
+                <button class="item">
+                    風味
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <ul class="list">
                     <li class="itemlist"><a href="#">水果香</a></li>
                     <li class="itemlist"><a href="#">木質花茶香</a></li>
                     <li class="itemlist"><a href="#">堅果香</a></li>
                 </ul>
+            </div>
+            
 
-                <li class="item">
-                    <a href="">單品特調</a>
-                </li>
-                <ul>
-                    <li class="itemlist"><a href="#">單品</a></li>
-                    <li class="itemlist"><a href="#">特調</a></li>
-                </ul>
+            <div class="btn_block">
+                <button class="item">
+                    單品特調
+                    <i class="fa fa-caret-down"></i>
+                </button>
+            <ul class="list">
+                <li class="itemlist"><a href="#">單品</a></li>
+                <li class="itemlist"><a href="#">特調</a></li>
             </ul>
+            </div>
+            
         </div>
 
         <!-- 商品列表 -->
@@ -136,9 +153,11 @@
                     <li>全部商品</li>
                 </ol>
             </div>
+
             <div class="productlist">
-                <a href="./coffee.html" class="product">
-                    <div class="product">
+    
+                <div class="product">
+                    <a href="./coffee.html" class="product">
                         <div class="product_img">
                             <img src="./img/coffeelist/ethiopia.png">
                         </div>
@@ -148,10 +167,11 @@
                         <div class="product_price">
                             <p>NT$400元</p>
                         </div>
-                    </div>
-                </a>
-                <a href="./coffee.html" class="product">
-                    <div class="product">
+                    </a>
+                </div>
+
+                <div class="product">
+                    <a href="./coffee.html" class="product">
                         <div class="product_img">
                             <img src="./img/coffeelist/brazil.png">
                         </div>
@@ -161,10 +181,11 @@
                         <div class="product_price">
                             <p>NT$400元</p>
                         </div>
-                    </div>
-                </a>
-                <a href="./coffee.html" class="product">
-                    <div class="product">
+                    </a>
+                </div>
+                
+                <div class="product">
+                    <a href="./coffee.html" class="product">
                         <div class="product_img">
                             <img src="./img/coffeelist/caribbeanbreeze.png">
                         </div>
@@ -174,10 +195,11 @@
                         <div class="product_price">
                             <p>NT$400元</p>
                         </div>
-                    </div>
-                </a>
-                <a href="./coffee.html" class="product">
-                    <div class="product">
+                    </a>
+                </div>
+ 
+                <div class="product">
+                    <a href="./coffee.html" class="product">
                         <div class="product_img">
                             <img src="./img/coffeelist/columbia.png">
                         </div>
@@ -187,10 +209,11 @@
                         <div class="product_price">
                             <p>NT$400元</p>
                         </div>
-                    </div>
-                </a>
-                <a href="./coffee.html" class="product">
-                    <div class="product">
+                    </a>
+                </div>
+   
+                <div class="product">
+                    <a href="./coffee.html" class="product">
                         <div class="product_img">
                             <img src="./img/coffeelist/costarica.png">
                         </div>
@@ -200,10 +223,11 @@
                         <div class="product_price">
                             <p>NT$400元</p>
                         </div>
-                    </div>
-                </a>
-                <a href="./coffee.html" class="product">
-                    <div class="product">
+                    </a>
+                </div>
+
+                <div class="product">
+                    <a href="./coffee.html" class="product">
                         <div class="product_img">
                             <img src="./img/coffeelist/floatinpacificocean.png">
                         </div>
@@ -213,10 +237,11 @@
                         <div class="product_price">
                             <p>NT$400元</p>
                         </div>
-                    </div>
-                </a>
-                <a href="./coffee.html" class="product">
-                    <div class="product">
+                    </a>
+                </div>
+
+                <div class="product">
+                    <a href="./coffee.html" class="product">
                         <div class="product_img">
                             <img src="./img/coffeelist/guatemala.png">
                         </div>
@@ -226,10 +251,11 @@
                         <div class="product_price">
                             <p>NT$400元</p>
                         </div>
-                    </div>
-                </a>
-                <a href="./coffee.html" class="product">
-                    <div class="product">
+                    </a>
+                </div>
+   
+                <div class="product">
+                    <a href="./coffee.html" class="product">
                         <div class="product_img">
                             <img src="./img/coffeelist/honduras.png">
                         </div>
@@ -239,10 +265,11 @@
                         <div class="product_price">
                             <p>NT$400元</p>
                         </div>
-                    </div>
-                </a>
-                <a href="./coffee.html" class="product">
-                    <div class="product">
+                    </a>
+                </div>
+
+                <div class="product">
+                    <a href="./coffee.html" class="product">
                         <div class="product_img">
                             <img src="./img/coffeelist/mandehling.png">
                         </div>
@@ -252,10 +279,11 @@
                         <div class="product_price">
                             <p>NT$400元</p>
                         </div>
-                    </div>
-                </a>
-                <a href="./coffee.html" class="product">
-                    <div class="product">
+                    </a>
+                </div>
+
+                <div class="product">
+                    <a href="./coffee.html" class="product">
                         <div class="product_img">
                             <img src="./img/coffeelist/mandhelingbraziflavor.png">
                         </div>
@@ -265,10 +293,11 @@
                         <div class="product_price">
                             <p>NT$400元</p>
                         </div>
-                    </div>
-                </a>
-                <a href="./coffee.html" class="product">
-                    <div class="product">
+                    </a>
+                </div>
+ 
+                <div class="product">
+                    <a href="./coffee.html" class="product">
                         <div class="product_img">
                             <img src="./img/coffeelist/nicaragua.png">
                         </div>
@@ -278,10 +307,11 @@
                         <div class="product_price">
                             <p>NT$400元</p>
                         </div>
-                    </div>
-                </a>
-                <a href="./coffee.html" class="product">
-                    <div class="product">
+                    </a>
+                </div>
+                
+                <div class="product">
+                    <a href="./coffee.html" class="product">
                         <div class="product_img">
                             <img src="./img/coffeelist/oasisinsahara.png">
                         </div>
@@ -291,10 +321,11 @@
                         <div class="product_price">
                             <p>NT$400元</p>
                         </div>
-                    </div>
-                </a>
-                <a href="./coffee.html" class="product">
-                    <div class="product">
+                    </a>
+                </div>
+
+                <div class="product">
+                    <a href="./coffee.html" class="product">
                         <div class="product_img">
                             <img src="./img/coffeelist/peru.png">
                         </div>
@@ -304,10 +335,11 @@
                         <div class="product_price">
                             <p>NT$400元</p>
                         </div>
-                    </div>
-                </a>
-                <a href="./coffee.html" class="product">
-                    <div class="product">
+                    </a>
+                </div>
+                
+                <div class="product">
+                    <a href="./coffee.html" class="product">
                         <div class="product_img">
                             <img src="./img/coffeelist/ramblearoundandes.png">
                         </div>
@@ -317,8 +349,9 @@
                         <div class="product_price">
                             <p>NT$400元</p>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
+                
             </div>
             <div class="paginationarea">
                 <div class="pagination_block">
@@ -374,5 +407,34 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./js/header.js"></script>
+    <script src="./js/gototop.js"></script>
+
+    <script>
+        var dropdown = document.getElementsByClassName("item");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+            });
+        }
+
+        var dropdown_all = document.getElementsByClassName("allitem");
+        var i;
+
+        for (i = 0; i < dropdown_all.length; i++) {
+        dropdown_all[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            });
+        }
+        
+    </script>
 </body>
 </html>

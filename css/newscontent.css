@@ -13,6 +13,30 @@ body.body_area{
     margin: 0;
 }
 
+/* ====回到最上面按鈕==== */
+button.go_top{
+    border:none;
+    width: 40px;
+    height: 40px;
+    background: none;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    color: white;
+    background-color: #FFA6A6;
+    border-radius: 10px;
+    font-size: 20px;
+    line-height: 1;
+    outline: none;
+    cursor: pointer;
+    font-size: 12px;
+    order: 1;
+}
+button.go_top:hover{
+    background-color: #e05648;
+    font-weight: bold;
+}
+
 div.newscontentarea{
     /* border: 1px solid red; */
     width: 70%;

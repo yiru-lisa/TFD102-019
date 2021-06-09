@@ -227,18 +227,6 @@ div.newsarea_right{
 }
 
 /* ===三角形符號(左)=== */
-div.newsarea_right > span{
-    display: inline-block;
-    width: 0;
-    height: 0;
-    border-left: 10px solid #e05648;
-    border-right: 0px solid transparent;
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    margin-right: 5px;
-}
-
-/* ===三角形符號(左)=== */
 div.newsarea_right p.newstitle > span{
     display: inline-block;
     width: 0;
@@ -448,7 +436,7 @@ div.contactarea{
 h3.title{
     font-size: 1.5rem;
     margin: 0;
-    text-decoration: underline #FFA6A6; 
+    /* text-decoration: underline #FFA6A6;  */
     padding-bottom: 10px;
     font-weight: normal;
 }
@@ -457,6 +445,19 @@ h3.title{
         font-size: 1.2rem;
         padding-left: 1rem;
     }
+}
+
+/* ===三角形符號(左)=== */
+h3.title > span{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 10px solid #e05648;
+    border-right: 0px solid transparent;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    margin-right: 5px;
+    transform: translateX(4px);
 }
 
 

@@ -137,7 +137,7 @@ div.menu_main div.menu_tab ul.option_item li > a::after{
 
 /* 設定開起中的頁籤 */
 div.menu_main div.menu_tab ul.option_item li > a.-on{
-    border: 1px solid #FFA6A6;
+    border: 1px solid #e05648;
     border-bottom: 1px solid white;
     color: black;
     font-weight: bold;
@@ -231,11 +231,14 @@ div.mlist:nth-child(4n){
 @media (max-width: 767px){
     div.mlist:nth-child(2n){
         margin-right: 0;
+    }
 }
 
 div.mlist:hover{
     background-color: #ecccb3;
     font-weight: bold;
+    transform: translateY(-5px);
+    transition: 0.5s;
 }
 
 div.mlist > img.menuimg{
@@ -244,6 +247,5 @@ div.mlist > img.menuimg{
 
 div.mlist > p.menutext{
     font-size: 0.875rem;
-    margin: 0;
+    margin: 0px;
 }
-

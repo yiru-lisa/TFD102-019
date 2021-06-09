@@ -232,20 +232,20 @@ div.breadcrumb ol.breadcrumb_list > li > a:hover{
 
 /* ===商品內容=== */
 div.main{
-    border: 1px solid brown;
+    /* border: 1px solid brown; */
     width: 75%;
 }
 
 div.productarea{
     width: 100%;
-    border: 1px solid rgb(228, 53, 135);
+    /* border: 1px solid rgb(228, 53, 135); */
 
     padding: 10px 0px;
     margin-bottom: 20px
 }
 
 div.product{
-    border: 1px solid green;
+    /* border: 1px solid green; */
     width: 100%;
     font-size: 0;
 }
@@ -261,7 +261,7 @@ div.product_img, div.product_info{
 }
 
 div.product_img{
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
     width: 40%;
 }
 @media (max-width: 500px){
@@ -276,7 +276,7 @@ div.product_img > img{
 }
 
 div.product_info{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     width: 60%;
     vertical-align: top;
     padding: 20px;
@@ -366,7 +366,7 @@ div.num > p.num{
 }
 
 div.btn_block{
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     display: flex;
     justify-content: flex-end;
     margin-top: 40px;

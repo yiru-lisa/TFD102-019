@@ -236,7 +236,7 @@ div.productlist{
     /* border: 1px solid rgb(228, 53, 135); */
     display: flex;
     flex-wrap: wrap;
-    padding: 10px 0px;
+    padding: 10px 5px 10px 0px;
     margin-bottom: 20px
 }
 

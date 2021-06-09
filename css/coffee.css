@@ -16,7 +16,7 @@ body.body_area{
 
 /* ====回到最上面按鈕==== */
 button.go_top{
-    border:none;
+    border:2px solid white;
     width: 40px;
     height: 40px;
     background: none;
@@ -183,8 +183,9 @@ ul.list li.itemlist > a:visited{
 
 /* ===右側商品區=== */
 div.main{
-    /* border: 1px solid orange; */
-    width: calc(100% - 200px - 50px);
+    /* border: 1px solid brown; */
+    width: 75%;
+    padding: 0px 13px 0px 10px;
     margin-left: 50px;
 }
 @media (max-width: 767px){
@@ -243,10 +244,6 @@ div.breadcrumb ol.breadcrumb_list > li > a:hover{
 }
 
 /* ===商品內容=== */
-div.main{
-    /* border: 1px solid brown; */
-    width: 75%;
-}
 
 div.productarea{
     width: 100%;
@@ -397,7 +394,7 @@ button.addtocart{
     border-radius: .25rem;
     font-size: 0.8rem;
     transition: all .1s linear;
-    width: 70px;
+    width: 75px;
 }
 @media (max-width: 767px){
     button.addtocart{
@@ -447,7 +444,7 @@ button.buynow{
     border-radius: .25rem;
     font-size: 0.8rem;
     transition: all .1s linear;
-    width: 70px;
+    width: 75px;
     margin-left: 10px;
 }
 @media (max-width: 767px){
@@ -497,8 +494,9 @@ div.product_content{
 }
 
 div.product_content > p.content{
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     color: black;
+    line-height: 1.8;
 }
 
 /* ===可能也喜歡推薦=== */
@@ -514,11 +512,11 @@ span.h3{
 }
 
 h3.recommend{
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     width: 90%;
     margin: 0;
     padding-bottom: 5px;
-    text-decoration: underline #FFA6A6; 
+    /* text-decoration: underline #FFA6A6;  */
     font-weight: normal; 
 }
 @media (max-width: 767px){
@@ -532,24 +530,23 @@ span.h3,h3.recommend{
 }
 
 div.recommend{
-    /* border: 1px solid crimson; */
+    border: 2px solid #ffa6a6;
     display: flex;
     justify-content: left;
     width: 100%;
-    padding-top: 20px;
-    padding-left: 20px;
+    padding: 20px 8px;
 }
 
 div.recommend_p{
     /* border: 1px solid palevioletred; */
-    width: calc(( 70% - 40px ) / 3);
+    width: calc( 95% / 4 );
     font-size: 0;
-    margin-right: 20px;
+    margin-right: 10px;
     margin-bottom: 20px;
     border-radius: 5px;
 }
 
-div.recommend_p:nth-child(3){
+div.recommend_p:nth-child(4){
     margin-right: 0px;
 }
 
@@ -585,7 +582,7 @@ div.recommend_p_name{
 
 div.recommend_p_name > p{
     padding-top: 3px;
-    font-size: 12px;
+    font-size: 0.5rem;
     margin: 0;
     line-height: 1.6;
     text-align: center;

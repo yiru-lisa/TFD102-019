@@ -170,7 +170,7 @@
                             <p class="num">數量：</p>
                             <label>
                                 <input id="min" name="" type="button" value="-" >
-                                <input id="num" name="num" type="text" value="1" readonly="true" onchange="setTotal();" >
+                                <input id="num" name="num" type="text" value="1" readonly="true"  >
                                 <input id="add" name="" type="button" value="+" >
                             </label>
                         </div>
@@ -320,7 +320,7 @@
             var t = $("#num"); 
             $("#add").click(function(){		
                 t.val(parseInt(t.val())+1)
-                setTotal();
+                
             });
             $("#min").click(function(){
                 if(t.val()>1){
@@ -329,7 +329,7 @@
                 else{
                 alert("至少購買一件哦！");
                 }
-                setTotal();
+               
             })
         });
         

@@ -32,6 +32,7 @@ button.go_top{
     font-size: 0.75rem;
     order: 1;
     vertical-align: center;
+    padding: 1px;
 }
 
 button.go_top:hover{

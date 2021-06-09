@@ -133,7 +133,7 @@ div.info{
     margin-left: 20px;
     padding-top: 30px;
     font-size: 0px;
-    background-image: url(../img/contact/message_memo_.png);
+    background-image: url(../img/contact/bg_1.jpg);
     background-repeat: no-repeat;
     background-size: 120%;
     background-position: center top;
@@ -146,11 +146,15 @@ div.info{
 }
 @media (max-width: 767px){
     div.info{
+        background-image: url(../img/contact/message_memo_.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center top;
         width: 100%;
         background-size: 90%;
         margin-left: 0px;
-        margin-top: 10px;
-        padding-top: 45px;
+        margin-top: 20px;
+        padding-top: 55px;
     }
 }
 
@@ -238,7 +242,16 @@ div.leaveamessage{
     padding: 20px;
     font-size: 16px;
     margin: 0 auto;
-    
+}
+@media (max-width: 767px){
+    div.leaveamessage{
+        background-image: url(../img/contact/message_memo_.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center top;
+        padding-top: 70px;
+        border: 0;
+    }
 }
 
 h3{

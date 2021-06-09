@@ -7,10 +7,6 @@
     font-family: "微軟正黑體","Prestige Elite Std Bold";
 }
 
-a{
-    text-decoration: none;
-}
-
 body.body_area{
     background-color: #FCE7DD;
     font-size: 0;
@@ -41,6 +37,34 @@ button.go_top:hover{
     background-color: #e05648;
     font-weight: bold;
 }
+
+/* ===彈跳視窗測試=== */
+div.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: hsla(0, 0%, 0%, .5);
+    
+    display: none;
+  }
+  
+  div.overlay > article{
+    background-color: white;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ddd;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+  }
+
+/* ===彈跳視窗測試=== */
 
 
 /* =====首頁底圖===== */
